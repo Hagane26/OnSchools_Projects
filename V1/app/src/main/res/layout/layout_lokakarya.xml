@@ -3,7 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
 
     <!-- Label Berandamu -->
     <TextView
@@ -177,9 +179,9 @@
         android:layout_marginEnd="14dp"
         android:background="@color/black" />
 
-    <android.support.v4.widget.NestedScrollView
+    <ScrollView
         android:id="@+id/V_Scroolposting_pertanyaan"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="390dp"
         android:layout_above="@+id/home_bg"
         android:layout_below="@+id/garis"
@@ -189,6 +191,7 @@
         android:layout_marginTop="11dp"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="-29dp">
+
         <RelativeLayout
             android:id="@+id/box_posting_pertanyaan"
             android:layout_width="match_parent"
@@ -196,13 +199,13 @@
 
             <ImageView
                 android:id="@+id/photo_profile_pertanyaan"
+                android:src="@drawable/ic_onschool"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="0dp"
-                android:background="@drawable/ic_frame_photo_profile_mini"
                 android:contentDescription="@string/photo_profile_penanya_pertanyaan" />
 
             <TextView
@@ -216,7 +219,7 @@
                 android:text="@string/nama_penanya"
                 android:textAppearance="@style/nama_penanya" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/btn_follow"
                 android:layout_width="58dp"
                 android:layout_height="16dp"
@@ -225,7 +228,8 @@
                 android:layout_marginTop="1dp"
                 android:layout_toEndOf="@+id/nama_penanya"
                 android:background="@drawable/ic_btn_follow"
-                android:contentDescription="@string/tombol_add" />
+                android:contentDescription="@string/tombol_add"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <RelativeLayout
                 android:id="@+id/frame_box_pertanyaan"
@@ -303,7 +307,7 @@
                 </RelativeLayout>
             </RelativeLayout>
 
-            <ImageButton
+            <Button
                 android:id="@+id/btn_jawab"
                 android:layout_width="146dp"
                 android:layout_height="34dp"
@@ -316,10 +320,11 @@
                 android:layout_marginEnd="97dp"
                 android:layout_marginBottom="0dp"
                 android:background="@drawable/ic_btn_jawab"
-                android:contentDescription="@string/tombol_jawab_pertanyaan" />
+                android:contentDescription="@string/tombol_jawab_pertanyaan"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </RelativeLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </ScrollView>
     <View
         android:id="@+id/home_bg"
         android:layout_width="wrap_content"
