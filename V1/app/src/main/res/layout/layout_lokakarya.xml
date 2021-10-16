@@ -3,6 +3,332 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#FFFFFF">
+    android:background="@color/white">
 
+    <!-- Label Berandamu -->
+    <TextView
+        android:id="@+id/berandamu"
+        android:layout_width="93dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="23dp"
+        android:gravity="top"
+        android:text="@string/berandamu"
+        android:textAppearance="@style/Label_beranda" />
+
+    <!-- border gambar profile -->
+    <LinearLayout
+        android:id="@+id/frame_photo_profile"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/ic_frame_poto_profile_standard"
+        android:contentDescription="@string/foto_profile" >
+        <ImageView
+            android:id="@+id/photo_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_frame_poto_profile_standard"
+            android:contentDescription="@string/foto_profile"/>
+    </LinearLayout>
+
+
+    <!-- Label Coin Balance -->
+
+    <TextView
+        android:id="@+id/coin_balance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/berandamu"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/vector"
+        android:gravity="top"
+        android:text="@string/coin_balance_label"
+        android:textAppearance="@style/coin_balanc" />
+
+
+    <TextView
+        android:id="@+id/coin_balance_jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/berandamu"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/coin_balance_label"
+        android:gravity="top"
+        android:text="@string/coin_balance_jumlah"
+        android:textAppearance="@style/coin_balanc" />
+
+    <View
+        android:id="@+id/vector"
+        android:layout_width="15dp"
+        android:layout_height="14dp"
+        android:layout_below="@+id/berandamu"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_coin" />
+
+    <EditText
+        android:id="@+id/tv_pertanyaan_lokakarya"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/coin_balance_label"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/ic_bg_tbx_question_lokakarya"
+        android:hint="@string/hint_tbx_pertanyaan_lokakarya"
+        android:inputType="text"
+        android:text=""
+        android:textAppearance="@style/tbx_pertanyaan_lokakarya" />
+
+    <!-- Baca,Pecahkan, dan dapatkan coin onschoolmu -->
+    <TextView
+        android:id="@+id/baca_pecahk"
+        android:layout_width="257dp"
+        android:layout_height="14dp"
+        android:layout_below="@+id/tv_pertanyaan_lokakarya"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="68dp"
+        android:gravity="top"
+        android:text="@string/baca_pecahkan"
+        android:textAppearance="@style/baca_pecahk" />
+
+    <HorizontalScrollView
+        android:id="@+id/H_ScrollviewPrestasi"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_below="@+id/baca_pecahk"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/box_presentasi"
+            android:layout_width="238dp"
+            android:layout_height="match_parent"
+            android:background="#805A97BF">
+
+            <ImageView
+                android:id="@+id/gambar_profile_prestasi"
+                android:layout_width="74dp"
+                android:layout_height="67dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/gambar_profile_prestasi" />
+
+            <TextView
+                android:id="@+id/judul_pretasi"
+                android:layout_width="149dp"
+                android:layout_height="22dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/gambar_profile_prestasi"
+                android:text="@string/judul_prestasi"
+                android:textAppearance="@style/siswa_indon" />
+
+            <TextView
+                android:id="@+id/isi_prestasi"
+                android:layout_width="105dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/judul_pretasi"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toEndOf="@+id/gambar_profile_prestasi"
+                android:gravity="top"
+                android:text="@string/isi_prestasi"
+                android:textAppearance="@style/siswa_kelas" />
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <!--Garis Horizontal-->
+    <View
+        android:id="@+id/garis"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/H_ScrollviewPrestasi"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:background="@color/black" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/V_Scroolposting_pertanyaan"
+        android:layout_width="wrap_content"
+        android:layout_height="390dp"
+        android:layout_above="@+id/home_bg"
+        android:layout_below="@+id/garis"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="-29dp">
+        <RelativeLayout
+            android:id="@+id/box_posting_pertanyaan"
+            android:layout_width="match_parent"
+            android:layout_height="169dp">
+
+            <ImageView
+                android:id="@+id/photo_profile_pertanyaan"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/ic_frame_photo_profile_mini"
+                android:contentDescription="@string/photo_profile_penanya_pertanyaan" />
+
+            <TextView
+                android:id="@+id/nama_penanya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/photo_profile_pertanyaan"
+                android:text="@string/nama_penanya"
+                android:textAppearance="@style/nama_penanya" />
+
+            <ImageButton
+                android:id="@+id/btn_follow"
+                android:layout_width="58dp"
+                android:layout_height="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/nama_penanya"
+                android:background="@drawable/ic_btn_follow"
+                android:contentDescription="@string/tombol_add" />
+
+            <RelativeLayout
+                android:id="@+id/frame_box_pertanyaan"
+                android:layout_width="wrap_content"
+                android:layout_height="103dp"
+                android:layout_below="@+id/btn_follow"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="0dp"
+                android:background="#A2D7FB">
+
+                <RelativeLayout
+                    android:id="@+id/frame_box_pertanyaan2"
+                    android:layout_width="323dp"
+                    android:layout_height="88dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="#E3E5EB">
+
+                    <TextView
+                        android:id="@+id/mata_pelajaran_pertanyaan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/mata_pelajaran_pertanyaan"
+                        android:textAppearance="@style/mata_pelajaran" />
+
+                    <TextView
+                        android:id="@+id/pertanyaan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="26dp"
+                        android:text="@string/pertanyaan"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/pertanyaan" />
+
+                    <TextView
+                        android:id="@+id/coin_pertanyaan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_toEndOf="@+id/eclipse"
+                        android:text="@string/coin_pertanyaan"
+                        android:textAppearance="@style/mata_pelajaran" />
+
+                    <View
+                        android:id="@+id/eclipse"
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_toEndOf="@+id/mata_pelajaran_pertanyaan"
+                        android:background="@drawable/ic_eclipse" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/btn_jawab"
+                android:layout_width="146dp"
+                android:layout_height="34dp"
+                android:layout_below="@+id/frame_box_pertanyaan"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="97dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="97dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/ic_btn_jawab"
+                android:contentDescription="@string/tombol_jawab_pertanyaan" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <View
+        android:id="@+id/home_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/ic_home_bg" />
 </RelativeLayout>
