@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">OnSchool</string>
+    <string name="app_name">onschool</string>
+    <string name="berandamu">Berandamu</string>
+    <string name="coin_balance_label">Coin Balance: </string>
+    <string name="coin_balance_jumlah">100</string>
+    <string name="baca_pecahkan">Baca,Pecahkan, dan dapatkan coin onschoolmu</string>
+    <string name="mulai_belajar">Mulai Belajar dengan ONschool!</string>
+    <string name="button_start">Button Start</string>
+    <string name="logo_onschool">Logo Onschool</string>
+    <string name="gambar_profile_prestasi">Gambar_profile_prestasi</string>
+    <string name="foto_profile">foto Profile</string>
+    <string name="judul_prestasi">Siswa indonesia Menang  Olimpiade \nMatematika  Tingkat Dunia!!</string>
+    <string name="isi_prestasi">Siswa kelas 12 Sekolah Kristen  Ipeka BSD, Stanve Avrilium  Widjaja meraih...................... .......................................................................\n....................................................................</string>
+    <string name="photo_profile_penanya_pertanyaan">Photo Profile Penanya pertanyaan</string>
+    <string name="tombol_jawab_pertanyaan">Tombol Jawab Pertanyaan</string>
+    <string name="nama_penanya">Nama Penanya</string>
+    <string name="btn_follow">Follow</string>
+    <string name="tombol_add">Tombol Add</string>
+    <string name="mata_pelajaran_pertanyaan">mata pelajaran</string>
+    <string name="coin_pertanyaan">100 Coin</string>
+    <string name="pertanyaan">Apa perbedaan sifat fisika etana dan etanol? Mengapa demikian?</string>
+    <string name="hint_tbx_pertanyaan_lokakarya">Ketik Pertanyaanmu</string>
 </resources>
