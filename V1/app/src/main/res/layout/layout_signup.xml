@@ -6,10 +6,10 @@
     android:background="@color/biru_laut">
 
     <RelativeLayout
-        android:id="@+id/layout_signin"
+        android:id="@+id/layout_signup"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/ic_bg_signin">
+        android:background="@drawable/ic_bg_signup">
 
         <LinearLayout
             android:id="@+id/group_tbx_nama"
@@ -80,15 +80,17 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
+
         <TextView
             android:id="@+id/contoh_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/group_tbx_email"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="-5dp"
             android:text="Contoh: onschool@gmail.com"
-            android:layout_centerHorizontal="true"
-            android:textAppearance="@style/contoh_email"/>
+            android:textAppearance="@style/contoh_email" />
+
         <LinearLayout
             android:id="@+id/group_tbx_username"
             android:layout_width="wrap_content"
@@ -159,45 +161,50 @@
 
         <Button
             android:id="@+id/btn_register"
-            android:layout_width="162dp"
-            android:layout_height="38dp"
+            android:layout_width="170dp"
+            android:layout_height="46dp"
             android:layout_below="@+id/group_tbx_password"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:background="@drawable/ic_btn_register" />
+            android:background="@drawable/ic_btn_register_layout_signup" />
+
         <TextView
             android:id="@+id/or_login_with"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/btn_register"
-            android:layout_marginTop="8dp"
             android:layout_centerHorizontal="true"
-            android:text="@string/or_login_with"/>
+            android:layout_marginTop="8dp"
+            android:text="@string/or_login_with" />
+
         <LinearLayout
             android:id="@+id/icon_sosmed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_below="@id/or_login_with"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:layout_centerHorizontal="true">
+            android:orientation="horizontal">
+
             <Button
                 android:id="@+id/btn_google"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:background="@drawable/ic_icon_google"/>
+                android:background="@drawable/ic_icon_google" />
+
             <Button
                 android:id="@+id/btn_twitter"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="24dp"
-                android:background="@drawable/ic_icon_twitter"/>
+                android:background="@drawable/ic_icon_twitter" />
+
             <Button
                 android:id="@+id/btn_fb"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="24dp"
-                android:background="@drawable/ic_icon_fb"/>
+                android:background="@drawable/ic_icon_fb" />
         </LinearLayout>
     </RelativeLayout>
 

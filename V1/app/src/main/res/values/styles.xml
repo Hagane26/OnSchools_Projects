@@ -198,4 +198,39 @@
         </item>
 
     </style>
+    <style name="opening_layout_login">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            24sp
+        </item>
+
+        <item name="android:textColor">
+            @color/biru_laut
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+        <item name="lineHeight">
+            28dp
+        </item>
+
+    </style>
+    <style name="btn_lupa_pass">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:textColor">
+            @color/biru_laut
+        </item>
+        <item name="lineHeight">
+            16dp
+        </item>
+
+    </style>
     </resources>

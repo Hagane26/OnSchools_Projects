@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ic_bg_layout_login">
+    <LinearLayout
+        android:id="@+id/login_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/opening_layout_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="@string/silahkan_login"
+            android:textAppearance="@style/opening_layout_login" />
+        <View
+            android:id="@+id/acc_layout_login"
+            android:layout_width="374dp"
+            android:layout_height="424dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/ic_acc_layout_login" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/group_tbx_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_acc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-135dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/icon_username"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginVertical="13dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_icon_username" />
+
+        <EditText
+            android:id="@+id/tbx_username_login"
+            android:layout_width="256dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="-32dp"
+            android:backgroundTint="@color/biru_laut"
+            android:hint="@string/username"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingHorizontal="36dp"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/tbx_nama"
+            android:textColorHint="@color/biru_laut"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_tbx_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_tbx_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/icon_pass"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginVertical="13dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_icon_pass" />
+
+        <EditText
+            android:id="@+id/tbx_password_login"
+            android:layout_width="256dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="-32dp"
+            android:backgroundTint="@color/biru_laut"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingHorizontal="36dp"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/tbx_nama"
+            android:textColorHint="@color/biru_laut"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_lupa_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_below="@id/group_tbx_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="null"
+        android:text="@string/lupa_password"
+        android:textAppearance="@style/btn_lupa_pass"/>
+
+    <Button
+        android:id="@+id/btn_login_layout_login"
+        android:layout_width="249dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/btn_lupa_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_btn_login_layout_login" />
+
+    <Button
+        android:id="@+id/btn_register_layout_login"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_below="@id/btn_login_layout_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="null"
+        android:text="@string/register"
+        android:textAppearance="@style/btn_lupa_pass" />
+</RelativeLayout>
