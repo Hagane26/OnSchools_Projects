@@ -11,13 +11,10 @@
     <TextView
         android:id="@+id/mulai_belaj"
         android:layout_width="wrap_content"
-        android:layout_height="21dp"
-        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="67dp"
         android:layout_marginTop="117dp"
-        android:layout_marginEnd="67dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/mulai_belajar"
         android:textAlignment="center"
         android:textAppearance="@style/mulai_belaj"
@@ -27,12 +24,9 @@
         android:id="@+id/noschool_1"
         android:layout_width="278dp"
         android:layout_height="419dp"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="67dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp"
-        android:layout_marginEnd="67dp"
         android:background="@drawable/ic_onschool"
         android:contentDescription="@string/logo_onschool" />
 
@@ -41,11 +35,8 @@
         android:layout_width="139dp"
         android:layout_height="43dp"
         android:layout_below="@+id/noschool_1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="133dp"
         android:layout_marginTop="0dp"
-        android:layout_marginEnd="133dp"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/ic_btn_start"
         android:contentDescription="@string/button_start"
         tools:ignore="TouchTargetSizeCheck" />
@@ -67,8 +58,6 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginEnd="45dp"
         android:layout_marginBottom="0dp"
-        android:layout_toStartOf="@+id/btm_right_acc"
         android:background="@drawable/ic_btm_left_acc" />
 </RelativeLayout>

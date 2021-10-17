@@ -339,5 +339,5 @@
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
-        android:background="@drawable/ic_home_bg" />
+        android:background="@drawable/ic_bg_home" />
 </RelativeLayout>

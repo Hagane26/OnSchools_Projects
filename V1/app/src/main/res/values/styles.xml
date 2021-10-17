@@ -25,11 +25,23 @@
         </item>
     </style>
     <style name="mulai_belaj">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
         <item name="android:textSize">
             18sp
         </item>
         <item name="android:textColor">
             #FEFEFF
+        </item>
+        <item name="lineHeight">
+            21.09dp
+        </item>
+        <item name="fontWeight">
+            700
         </item>
     </style>
     <style name="siswa_indon">
