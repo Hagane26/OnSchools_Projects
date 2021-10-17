@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Label_beranda">
+        <item name="fontFamily">
+            Roboto
+        </item>
         <item name="android:textSize">
             18sp
         </item>
@@ -9,6 +12,9 @@
         </item>
     </style>
     <style name="coin_balanc">
+        <item name="fontFamily">
+            Roboto
+        </item>
         <item name="android:textSize">
             12sp
         </item>
@@ -17,6 +23,9 @@
         </item>
     </style>
     <style name="baca_pecahk">
+        <item name="fontFamily">
+            Roboto
+        </item>
         <item name="android:textSize">
             12sp
         </item>
@@ -25,6 +34,7 @@
         </item>
     </style>
     <style name="mulai_belaj">
+
         <item name="fontFamily">
             Roboto
         </item>
@@ -45,7 +55,9 @@
         </item>
     </style>
     <style name="siswa_indon">
-
+        <item name="fontFamily">
+            Roboto
+        </item>
         <item name="android:textSize">
             9sp
         </item>
@@ -56,7 +68,9 @@
 
     </style>
     <style name="siswa_kelas">
-
+        <item name="fontFamily">
+            Roboto
+        </item>
         <item name="android:textSize">
             5sp
         </item>
@@ -67,7 +81,9 @@
 
     </style>
     <style name="nama_penanya">
-
+        <item name="fontFamily">
+            Roboto
+        </item>
         <item name="android:textSize">
             12sp
         </item>
@@ -78,7 +94,9 @@
 
     </style>
     <style name="btn_follow">
-
+        <item name="fontFamily">
+            Roboto
+        </item>
         <item name="android:textSize">
             12sp
         </item>
@@ -89,7 +107,9 @@
 
     </style>
     <style name="mata_pelajaran">
-
+        <item name="fontFamily">
+            Roboto
+        </item>
         <item name="android:textSize">
             9sp
         </item>
@@ -100,7 +120,9 @@
 
     </style>
     <style name="pertanyaan">
-
+        <item name="fontFamily">
+            Roboto
+        </item>
         <item name="android:textSize">
             12sp
         </item>
@@ -111,6 +133,9 @@
 
     </style>
     <style name="tbx_pertanyaan_lokakarya">
+        <item name="fontFamily">
+            Roboto
+        </item>
         <item name="android:textSize">
             12sp
         </item>
@@ -120,7 +145,6 @@
         </item>
     </style>
     <style name="welcome_landing">
-
         <item name="android:textSize">
             24sp
         </item>
@@ -148,4 +172,17 @@
         </item>
 
     </style>
-</resources>
+    <style name="tbx_nama">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #3498DB
+        </item>
+
+    </style>
+    </resources>

@@ -7,35 +7,42 @@
 
     <!-- Selamat Datang di Onschool -->
     <!-- Belajar dimana saja dan kapan saja Onschool Pilihannya! -->
-    <TextView
-        android:id="@+id/welcome_landing"
+    <LinearLayout
+        android:id="@+id/text_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="119dp"
-        android:text="@string/welcome_landing"
-        android:textAppearance="@style/welcome_landing"
-        tools:ignore="TextContrastCheck" />
+        android:layout_marginTop="95dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/belajar_dim"
-        android:layout_width="306dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/welcome_landing"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:text="@string/welcome_word_landing"
-        android:textAppearance="@style/welcome_word_landing"
-        tools:ignore="TextContrastCheck" />
+        <TextView
+            android:id="@+id/welcome_landing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_landing"
+            android:textAppearance="@style/welcome_landing"
+            tools:ignore="TextContrastCheck"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/belajar_dim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/welcome_word_landing"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/welcome_word_landing"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_signin"
         android:layout_width="229dp"
         android:layout_height="54dp"
-        android:layout_below="@+id/belajar_dim"
-        android:layout_marginTop="83dp"
+        android:layout_below="@+id/text_welcome"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
         android:background="@drawable/ic_btn_signin"
         tools:ignore="SpeakableTextPresentCheck" />
 

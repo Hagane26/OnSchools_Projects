@@ -1,8 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_bg_layout_register">
+    android:background="@color/biru_laut">
+
+    <RelativeLayout
+        android:id="@+id/layout_signin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_bg_signin">
+
+        <LinearLayout
+            android:id="@+id/group_tbx_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp">
+
+            <EditText
+                android:id="@+id/tbx_nama_depan"
+                android:layout_width="115dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/biru_laut"
+                android:hint="@string/nama_depan"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textAppearance="@style/tbx_nama"
+                android:textColorHint="@color/biru_laut"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/tbx_nama_belakang"
+                android:layout_width="115dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="26dp"
+                android:backgroundTint="@color/biru_laut"
+                android:hint="@string/nama_belakang"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textAppearance="@style/tbx_nama"
+                android:textColorHint="@color/biru_laut"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_tbx_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </RelativeLayout>
 
 
 </RelativeLayout>

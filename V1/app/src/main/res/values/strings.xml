@@ -22,4 +22,6 @@
     <string name="hint_tbx_pertanyaan_lokakarya">Ketik Pertanyaanmu</string>
     <string name="welcome_landing">Selamat Datang di Onschool</string>
     <string name="welcome_word_landing">Belajar dimana saja dan kapan saja\nOnschool Pilihannya!</string>
+    <string name="nama_depan">Nama Depan</string>
+    <string name="nama_belakang">Nama Belakang</string>
 </resources>
