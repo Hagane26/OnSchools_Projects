@@ -8,9 +8,7 @@
         android:id="@+id/login_acc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="45dp"
         android:layout_centerHorizontal="true"
         android:orientation="vertical">
@@ -18,7 +16,7 @@
             android:id="@+id/opening_layout_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="6dp"
+            android:layout_marginStart="25dp"
             android:text="@string/silahkan_login"
             android:textAppearance="@style/opening_layout_login" />
         <View
@@ -69,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/group_tbx_username"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="0dp"
         android:orientation="horizontal">
 
         <View
@@ -103,8 +101,8 @@
         android:layout_height="18dp"
         android:layout_below="@id/group_tbx_password"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:background="null"
+        android:layout_marginTop="0dp"
+        android:background="@null"
         android:text="@string/lupa_password"
         android:textAppearance="@style/btn_lupa_pass"/>
 
@@ -123,8 +121,8 @@
         android:layout_height="18dp"
         android:layout_below="@id/btn_login_layout_login"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="0dp"
-        android:background="null"
+        android:layout_marginTop="-6dp"
+        android:background="@null"
         android:text="@string/register"
         android:textAppearance="@style/btn_lupa_pass" />
 </RelativeLayout>
