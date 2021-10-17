@@ -24,4 +24,8 @@
     <string name="welcome_word_landing">Belajar dimana saja dan kapan saja\nOnschool Pilihannya!</string>
     <string name="nama_depan">Nama Depan</string>
     <string name="nama_belakang">Nama Belakang</string>
+    <string name="email">E-mail</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="or_login_with">or login with</string>
 </resources>
