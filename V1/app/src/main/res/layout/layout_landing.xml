@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg_landing"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Selamat Datang di Onschool -->
+    <!-- Belajar dimana saja dan kapan saja Onschool Pilihannya! -->
+    <TextView
+        android:id="@+id/welcome_landing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="53dp"
+        android:text="@string/welcome_landing"
+        android:textAlignment="center"
+        android:textAppearance="@style/welcome_landing"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/belajar_dim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_landing"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/welcome_word_landing"
+        android:textAppearance="@style/welcome_word_landing" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="229dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/belajar_dim"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="91dp"
+        android:background="@drawable/ic_btn_signin"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="229dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/btn_signin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="91dp"
+        android:background="@drawable/ic_btn_login"
+        tools:ignore="SpeakableTextPresentCheck" />
+</RelativeLayout>

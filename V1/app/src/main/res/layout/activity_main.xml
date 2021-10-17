@@ -2,8 +2,8 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/get_started"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/biru_laut"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
@@ -20,9 +20,10 @@
         android:layout_marginEnd="67dp"
         android:text="@string/mulai_belajar"
         android:textAlignment="center"
-        android:textAppearance="@style/mulai_belaj" />
+        android:textAppearance="@style/mulai_belaj"
+        tools:ignore="TextContrastCheck" />
 
-    <ImageView
+    <View
         android:id="@+id/noschool_1"
         android:layout_width="278dp"
         android:layout_height="419dp"
@@ -35,7 +36,7 @@
         android:background="@drawable/ic_onschool"
         android:contentDescription="@string/logo_onschool" />
 
-    <ImageButton
+    <Button
         android:id="@+id/btn_start"
         android:layout_width="139dp"
         android:layout_height="43dp"

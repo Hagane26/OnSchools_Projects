@@ -5,7 +5,7 @@
     <string name="coin_balance_jumlah">100</string>
     <string name="baca_pecahkan">Baca,Pecahkan, dan dapatkan coin onschoolmu</string>
     <string name="mulai_belajar">Mulai Belajar dengan ONschool!</string>
-    <string name="button_start">Button Start</string>
+    <string name="button_start">Tombol Start</string>
     <string name="logo_onschool">Logo Onschool</string>
     <string name="gambar_profile_prestasi">Gambar_profile_prestasi</string>
     <string name="foto_profile">foto Profile</string>
@@ -20,4 +20,6 @@
     <string name="coin_pertanyaan">100 Coin</string>
     <string name="pertanyaan">Apa perbedaan sifat fisika etana dan etanol? Mengapa demikian?</string>
     <string name="hint_tbx_pertanyaan_lokakarya">Ketik Pertanyaanmu</string>
+    <string name="welcome_landing">Selamat Datang di Onschool</string>
+    <string name="welcome_word_landing">Belajar dimana saja dan kapan saja\nOnschool Pilihannya!</string>
 </resources>
