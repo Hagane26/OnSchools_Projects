@@ -1,49 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout_dasar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_bg_landing"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:background="@drawable/ic_bg_layout_landing">
 
-    <!-- Selamat Datang di Onschool -->
-    <!-- Belajar dimana saja dan kapan saja Onschool Pilihannya! -->
-    <LinearLayout
-        android:id="@+id/text_welcome"
+    <TextView
+        android:id="@+id/welcome_landing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="95dp"
-        android:orientation="vertical">
+        android:text="@string/welcome_landing"
+        android:textAlignment="center"
+        android:textAppearance="@style/welcome_landing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/atas_layout_landing"
+        tools:ignore="TextContrastCheck" />
 
-        <TextView
-            android:id="@+id/welcome_landing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/welcome_landing"
-            android:textAppearance="@style/welcome_landing"
-            tools:ignore="TextContrastCheck"
-            android:textAlignment="center"/>
-
-        <TextView
-            android:id="@+id/belajar_dim"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/welcome_word_landing"
-            android:textAlignment="textStart"
-            android:textAppearance="@style/welcome_word_landing"
-            tools:ignore="TextContrastCheck" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/belajar_dim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/welcome_word_landing"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/welcome_word_landing"
+        app:layout_constraintStart_toStartOf="@+id/welcome_landing"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_landing"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btn_signin"
         android:layout_width="229dp"
         android:layout_height="54dp"
-        android:layout_below="@+id/text_welcome"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="83dp"
         android:background="@drawable/ic_btn_signup"
+        app:layout_constraintEnd_toEndOf="@+id/welcome_landing"
+        app:layout_constraintStart_toStartOf="@+id/welcome_landing"
+        app:layout_constraintTop_toBottomOf="@+id/belajar_dim"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
@@ -51,8 +49,18 @@
         android:layout_width="229dp"
         android:layout_height="54dp"
         android:layout_below="@+id/btn_signin"
-        android:layout_marginTop="38dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
         android:background="@drawable/ic_btn_login"
+        app:layout_constraintEnd_toEndOf="@+id/btn_signin"
+        app:layout_constraintStart_toStartOf="@+id/btn_signin"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signin"
         tools:ignore="SpeakableTextPresentCheck" />
-</RelativeLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/atas_layout_landing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.121751025" />
+</android.support.constraint.ConstraintLayout>

@@ -1,173 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout_dasar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/biru_laut">
 
-    <RelativeLayout
-        android:id="@+id/layout_signup"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Layout_depan"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/ic_bg_signup">
 
-        <LinearLayout
-            android:id="@+id/group_tbx_nama"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="300dp">
+        <EditText
+            android:id="@+id/tbx_nama_depan"
+            android:layout_width="115dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/biru_laut"
+            android:hint="@string/nama_depan"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textAppearance="@style/tbx_nama"
+            android:textColorHint="@color/biru_laut"
+            app:layout_constraintStart_toStartOf="@+id/tbx_email"
+            app:layout_constraintTop_toTopOf="@id/atas_layout_signup"
+            tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
 
-            <EditText
-                android:id="@+id/tbx_nama_depan"
-                android:layout_width="115dp"
-                android:layout_height="48dp"
-                android:backgroundTint="@color/biru_laut"
-                android:hint="@string/nama_depan"
-                android:importantForAutofill="no"
-                android:inputType="text"
-                android:textAlignment="center"
-                android:textAppearance="@style/tbx_nama"
-                android:textColorHint="@color/biru_laut"
-                tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+        <EditText
+            android:id="@+id/tbx_nama_belakang"
+            android:layout_width="115dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/biru_laut"
+            android:hint="@string/nama_belakang"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textAppearance="@style/tbx_nama"
+            android:textColorHint="@color/biru_laut"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tbx_nama_depan"
+            app:layout_constraintEnd_toEndOf="@+id/tbx_email"
+            tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
 
-            <EditText
-                android:id="@+id/tbx_nama_belakang"
-                android:layout_width="115dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="26dp"
-                android:backgroundTint="@color/biru_laut"
-                android:hint="@string/nama_belakang"
-                android:importantForAutofill="no"
-                android:inputType="text"
-                android:textAlignment="center"
-                android:textAppearance="@style/tbx_nama"
-                android:textColorHint="@color/biru_laut"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </LinearLayout>
+        <EditText
+            android:id="@+id/tbx_email"
+            android:layout_width="256dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/biru_laut"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="36dp"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/tbx_nama"
+            android:textColorHint="@color/biru_laut"
+            app:layout_constraintEnd_toStartOf="@+id/kanan_layout_signup"
+            app:layout_constraintStart_toStartOf="@+id/kiri_layout_signup"
+            app:layout_constraintTop_toBottomOf="@+id/tbx_nama_depan"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-        <LinearLayout
-            android:id="@+id/group_tbx_email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/group_tbx_nama"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="-10dp"
-            android:orientation="horizontal">
-
-            <View
-                android:id="@+id/icon_email"
-                android:layout_width="21dp"
-                android:layout_height="21dp"
-                android:layout_marginVertical="13dp"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/ic_icon_email" />
-
-            <EditText
-                android:id="@+id/tbx_email"
-                android:layout_width="256dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="-32dp"
-                android:backgroundTint="@color/biru_laut"
-                android:hint="@string/email"
-                android:importantForAutofill="no"
-                android:inputType="textEmailAddress"
-                android:paddingHorizontal="36dp"
-                android:textAlignment="textStart"
-                android:textAppearance="@style/tbx_nama"
-                android:textColorHint="@color/biru_laut"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </LinearLayout>
+        <View
+            android:id="@+id/icon_email"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginVertical="13dp"
+            android:background="@drawable/ic_icon_email"
+            app:layout_constraintBottom_toTopOf="@+id/contoh_email"
+            app:layout_constraintEnd_toEndOf="@+id/tbx_email"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="@+id/tbx_email"
+            app:layout_constraintTop_toTopOf="@+id/tbx_email"
+            app:layout_constraintVertical_bias="0.04" />
 
         <TextView
             android:id="@+id/contoh_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/group_tbx_email"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="-5dp"
-            android:text="Contoh: onschool@gmail.com"
-            android:textAppearance="@style/contoh_email" />
+            android:text="@string/contoh_onschool_gmail_com"
+            android:textAppearance="@style/contoh_email"
+            app:layout_constraintEnd_toEndOf="@+id/tbx_email"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/tbx_email"
+            app:layout_constraintTop_toBottomOf="@+id/tbx_email" />
 
-        <LinearLayout
-            android:id="@+id/group_tbx_username"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/contoh_email"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="-10dp"
-            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/tbx_username"
+            android:layout_width="256dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/biru_laut"
+            android:hint="@string/username"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingHorizontal="36dp"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/tbx_nama"
+            android:textColorHint="@color/biru_laut"
+            app:layout_constraintEnd_toEndOf="@+id/tbx_email"
+            app:layout_constraintStart_toStartOf="@+id/tbx_email"
+            app:layout_constraintTop_toBottomOf="@+id/contoh_email"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-            <View
-                android:id="@+id/icon_username"
-                android:layout_width="21dp"
-                android:layout_height="21dp"
-                android:layout_marginVertical="13dp"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/ic_icon_username" />
+        <View
+            android:id="@+id/icon_username"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginVertical="13dp"
+            android:background="@drawable/ic_icon_username"
+            app:layout_constraintBottom_toBottomOf="@+id/tbx_username"
+            app:layout_constraintEnd_toEndOf="@+id/tbx_username"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="@+id/tbx_username"
+            app:layout_constraintTop_toBottomOf="@+id/contoh_email"
+            app:layout_constraintVertical_bias="0.04" />
 
-            <EditText
-                android:id="@+id/tbx_username"
-                android:layout_width="256dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="-32dp"
-                android:backgroundTint="@color/biru_laut"
-                android:hint="@string/username"
-                android:importantForAutofill="no"
-                android:inputType="text"
-                android:paddingHorizontal="36dp"
-                android:textAlignment="textStart"
-                android:textAppearance="@style/tbx_nama"
-                android:textColorHint="@color/biru_laut"
-                tools:ignore="SpeakableTextPresentCheck" />
+        <EditText
+            android:id="@+id/tbx_password_signup"
+            android:layout_width="256dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/biru_laut"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingHorizontal="36dp"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/tbx_nama"
+            android:textColorHint="@color/biru_laut"
+            app:layout_constraintEnd_toEndOf="@+id/tbx_username"
+            app:layout_constraintStart_toStartOf="@+id/tbx_username"
+            app:layout_constraintTop_toBottomOf="@+id/tbx_username"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/group_tbx_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/group_tbx_username"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="-10dp"
-            android:orientation="horizontal">
-
-            <View
-                android:id="@+id/icon_pass"
-                android:layout_width="21dp"
-                android:layout_height="21dp"
-                android:layout_marginVertical="13dp"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/ic_icon_pass" />
-
-            <EditText
-                android:id="@+id/tbx_password_signup"
-                android:layout_width="256dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="-32dp"
-                android:backgroundTint="@color/biru_laut"
-                android:hint="@string/password"
-                android:importantForAutofill="no"
-                android:inputType="textPassword"
-                android:paddingHorizontal="36dp"
-                android:textAlignment="textStart"
-                android:textAppearance="@style/tbx_nama"
-                android:textColorHint="@color/biru_laut"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </LinearLayout>
+        <View
+            android:id="@+id/icon_pass"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginVertical="13dp"
+            android:background="@drawable/ic_icon_pass"
+            app:layout_constraintBottom_toBottomOf="@+id/tbx_password_signup"
+            app:layout_constraintEnd_toEndOf="@+id/tbx_password_signup"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="@+id/tbx_password_signup"
+            app:layout_constraintTop_toBottomOf="@+id/tbx_username"
+            app:layout_constraintVertical_bias="0.04" />
 
         <Button
             android:id="@+id/btn_register"
             android:layout_width="170dp"
             android:layout_height="46dp"
-            android:layout_below="@+id/group_tbx_password"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="18dp"
             android:background="@drawable/ic_btn_register_layout_signup"
-            tools:ignore="SpeakableTextPresentCheck" />
+            app:layout_constraintEnd_toEndOf="@+id/tbx_password_signup"
+            app:layout_constraintStart_toStartOf="@+id/tbx_password_signup"
+            app:layout_constraintTop_toBottomOf="@+id/tbx_password_signup"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/or_login_with"
@@ -175,42 +163,67 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/btn_register"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="0dp"
-            android:text="@string/or_login_with" />
+            android:text="@string/or_login_with"
+            app:layout_constraintEnd_toEndOf="@+id/btn_register"
+            app:layout_constraintStart_toStartOf="@+id/btn_register"
+            app:layout_constraintTop_toBottomOf="@+id/btn_register" />
 
-        <LinearLayout
-            android:id="@+id/icon_sosmed"
+        <Button
+            android:id="@+id/btn_google"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_icon_google"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_twitter"
+            app:layout_constraintEnd_toStartOf="@+id/btn_twitter"
+            app:layout_constraintStart_toStartOf="@+id/btn_register"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_twitter"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_icon_twitter"
+            app:layout_constraintEnd_toEndOf="@+id/or_login_with"
+            app:layout_constraintStart_toStartOf="@+id/or_login_with"
+            app:layout_constraintTop_toBottomOf="@+id/or_login_with"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_fb"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_icon_fb"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_twitter"
+            app:layout_constraintEnd_toEndOf="@+id/btn_register"
+            app:layout_constraintStart_toEndOf="@+id/btn_twitter"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/kiri_layout_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/or_login_with"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.06326034" />
 
-            <Button
-                android:id="@+id/btn_google"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:background="@drawable/ic_icon_google"
-                tools:ignore="SpeakableTextPresentCheck" />
+        <android.support.constraint.Guideline
+            android:id="@+id/bawah_layout_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8946648" />
 
-            <Button
-                android:id="@+id/btn_twitter"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="24dp"
-                android:background="@drawable/ic_icon_twitter"
-                tools:ignore="SpeakableTextPresentCheck" />
+        <android.support.constraint.Guideline
+            android:id="@+id/kanan_layout_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94160587" />
 
-            <Button
-                android:id="@+id/btn_fb"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="24dp"
-                android:background="@drawable/ic_icon_fb"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </LinearLayout>
-    </RelativeLayout>
-
-
-</RelativeLayout>
+        <android.support.constraint.Guideline
+            android:id="@+id/atas_layout_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.40902874" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
