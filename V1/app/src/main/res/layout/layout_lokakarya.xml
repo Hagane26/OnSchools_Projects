@@ -172,7 +172,7 @@
 
     <!--Garis Horizontal-->
     <View
-        android:id="@+id/garis"
+        android:id="@+id/garis_atas"
         android:layout_width="wrap_content"
         android:layout_height="2dp"
         android:layout_below="@+id/H_ScrollviewPrestasi"
@@ -189,7 +189,7 @@
         android:layout_width="match_parent"
         android:layout_height="390dp"
         android:layout_above="@+id/home_bg"
-        android:layout_below="@+id/garis"
+        android:layout_below="@+id/garis_atas"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="36dp"

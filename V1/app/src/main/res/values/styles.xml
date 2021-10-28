@@ -231,6 +231,39 @@
         <item name="lineHeight">
             16dp
         </item>
-
+    </style>
+    <style name="label_hi_layout_home">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            18sp
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+        <item name="android:textColor">
+            @color/black
+        </item>
+        <item name="lineHeight">
+            16dp
+        </item>
+    </style>
+    <style name="label_hi_layout_home1">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            36sp
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+        <item name="android:textColor">
+            @color/black
+        </item>
+        <item name="lineHeight">
+            16dp
+        </item>
     </style>
     </resources>

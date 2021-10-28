@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/salam_layout_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/hi"
+        android:textAppearance="@style/label_hi_layout_home"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toTopOf="@+id/guideline_atas_layout_homr" />
+
+    <TextView
+        android:id="@+id/nama_user_layout_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_user_layout_home"
+        android:textAppearance="@style/label_hi_layout_home"
+        app:layout_constraintBaseline_toBaselineOf="@+id/salam_layout_home"
+        app:layout_constraintStart_toEndOf="@+id/salam_layout_home" />
+
+    <ImageView
+        android:id="@+id/foto_profile_layout_home"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:src=""
+        app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
+        app:layout_constraintTop_toTopOf="@+id/guideline_atas_layout_homr" />
+
+    <TextView
+        android:id="@+id/mau_belajar_apa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mau_belajar_apa_hari_ini"
+        android:textAppearance="@style/label_hi_layout_home1"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toBottomOf="@+id/nama_user_layout_home" />
+
+    <HorizontalScrollView
+        android:id="@+id/frame_mapel_layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/mau_belajar_apa"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_mapel_IPA"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:background="@drawable/ic_btn_matkul_ipa"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn_mapel_IPS"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_marginStart="14dp"
+                android:background="@drawable/ic_btn_matkul_ips"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_mapel_IPA"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn_mapel_Bahasa"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_marginStart="14dp"
+                android:background="@drawable/ic_btn_matkul_bahasa"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_mapel_IPS"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn_mapel_umum"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_marginStart="14dp"
+                android:background="@drawable/ic_btn_matkul_umum"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_mapel_Bahasa"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </android.support.constraint.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/garis_atas"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="32dp"
+        android:background="#203498DB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_mapel_layout_login" />
+
+    <TextView
+        android:id="@+id/Yakin_gak_mau_ikut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="@string/yakin_gak_mau_ikut"
+        android:textAppearance="@style/label_hi_layout_home"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toBottomOf="@+id/garis_atas" />
+
+    <HorizontalScrollView
+        android:id="@+id/Hframe_box_prestasi"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/Yakin_gak_mau_ikut"
+        tools:layout_editor_absoluteX="-46dp">
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/frame_box_prestasi"
+            android:layout_width="283dp"
+            android:layout_height="match_parent"
+            android:background="#805A97BF">
+
+            <ImageView
+                android:id="@+id/gambar_profile_prestasi"
+                android:layout_width="74dp"
+                android:layout_height="67dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="4dp"
+                android:contentDescription="@string/gambar_profile_prestasi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4" />
+
+            <TextView
+                android:id="@+id/judul_pretasi"
+                android:layout_width="149dp"
+                android:layout_height="22dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="4dp"
+                android:layout_toEndOf="@+id/gambar_profile_prestasi"
+                android:text="@string/judul_prestasi"
+                android:textAppearance="@style/siswa_indon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gambar_profile_prestasi"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/isi_prestasi"
+                android:layout_width="105dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/judul_pretasi"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="14dp"
+                android:layout_toEndOf="@+id/gambar_profile_prestasi"
+                android:gravity="top"
+                android:text="@string/isi_prestasi"
+                android:textAppearance="@style/siswa_kelas"
+                app:layout_constraintStart_toStartOf="@+id/judul_pretasi"
+                app:layout_constraintTop_toBottomOf="@+id/judul_pretasi"
+                tools:ignore="TextContrastCheck" />
+        </android.support.constraint.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/garis_bawah"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="28dp"
+        android:background="#203498DB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hframe_box_prestasi" />
+
+    <TextView
+        android:id="@+id/bantu_pecahkan_masalah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/bantu_percahkan_masalah"
+        android:textAppearance="@style/label_hi_layout_home"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toBottomOf="@+id/garis_bawah" />
+
+    <ScrollView
+        android:id="@+id/scrollView_pertanyaan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toBottomOf="@+id/bantu_pecahkan_masalah"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_atas_layout_homr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01504788" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_kanan_layout_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96107054" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_kiri_layout_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03892944" />
+
+</android.support.constraint.ConstraintLayout>

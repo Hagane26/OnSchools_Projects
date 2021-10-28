@@ -32,4 +32,9 @@
     <string name="lupa_password"><u>Lupa Password?</u></string>
     <string name="register"><u>Register</u></string>
     <string name="contoh_onschool_gmail_com">Contoh: onschool@gmail.com</string>
+    <string name="hi">Hi,</string>
+    <string name="nama_user_layout_home">nama user</string>
+    <string name="mau_belajar_apa_hari_ini">Mau Belajar\nApa Hari Ini?</string>
+    <string name="yakin_gak_mau_ikut">Yakin Gak Mau Ikut?</string>
+    <string name="bantu_percahkan_masalah">Bantu Percahkan Masalah!!</string>
 </resources>
