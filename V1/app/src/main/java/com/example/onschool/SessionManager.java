@@ -9,9 +9,11 @@ import java.util.HashMap;
 
 public class SessionManager {
     SharedPreferences sharedPreferences;
-    public SharedPreferences.Editor editor;
+    public SharedPreferences.Editor editor, BegginEditor;
     public Context ctx;
     int PRIVATE_MODE = 0;
+
+    private static final String BegginApp = "BegginApp";
 
     private static final String PREF_NAME = "LOGIN";
     private static final String LOGIN = "IS_LOGIN";
@@ -29,6 +31,7 @@ public class SessionManager {
         this.ctx = ctx;
         sharedPreferences = ctx.getSharedPreferences(PREF_NAME,PRIVATE_MODE);
         editor = sharedPreferences.edit();
+        BegginEditor = sharedPreferences.edit();
     }
 
     public void createSession(String data_id, String data_name, String data_kelas,
@@ -47,14 +50,22 @@ public class SessionManager {
         editor.apply();
     }
 
+    public boolean isFirst() {return sharedPreferences.getBoolean(BegginApp,true);}
+
     public boolean isLoggin(){
         return sharedPreferences.getBoolean(LOGIN,false);
     }
 
     public void checkLogin(){
-        if(!this.isLoggin()){
-            ctx.startActivity(new Intent(ctx,LoginActivity.class));
-            ((HomeActivity)ctx).finish();
+        if(!this.isFirst()){
+            if(!this.isLoggin()){
+                ctx.startActivity(new Intent(ctx,LoginActivity.class));
+                ((HomeActivity)ctx).finish();
+            }
+        }else{
+            ctx.startActivity(new Intent(ctx,MainActivity.class));
+            BegginEditor.putBoolean(BegginApp,false);
+            BegginEditor.apply();
         }
     }
 

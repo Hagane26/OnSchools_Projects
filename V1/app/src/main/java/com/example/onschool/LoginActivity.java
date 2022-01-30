@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         EditText et_Username = findViewById(R.id.tbx_username_login);
         EditText et_Password = findViewById(R.id.tbx_password_login);
         Button btn_Login = findViewById(R.id.btn_login_layout_login);
+        Button btn_Regis = findViewById(R.id.btn_register_layout_login);
 
         btn_Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +47,12 @@ public class LoginActivity extends AppCompatActivity {
                 }
         });
 
+        btn_Regis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this,SignupActivity.class));
+            }
+        });
     }
 
     private void jsonParse(String in_Username, String in_Password, Context ctx){

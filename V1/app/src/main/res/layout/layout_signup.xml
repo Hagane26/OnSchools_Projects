@@ -49,6 +49,7 @@
             android:layout_height="48dp"
             android:backgroundTint="@color/biru_laut"
             android:hint="@string/email"
+            android:hintTextColor="#1565C0"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
             android:paddingHorizontal="36dp"
