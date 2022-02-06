@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="283dp"
+    android:layout_height="78dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/frame_box_prestasi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#805A97BF">
+
+        <ImageView
+            android:id="@+id/gambar_profile_prestasi"
+            android:layout_width="74dp"
+            android:layout_height="67dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/gambar_profile_prestasi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <TextView
+            android:id="@+id/judul_pretasi"
+            tools:ignore="TextContrastCheck"
+            android:layout_width="149dp"
+            android:layout_height="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toEndOf="@+id/gambar_profile_prestasi"
+            android:text="@string/judul_prestasi"
+            android:textAppearance="@style/siswa_indon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gambar_profile_prestasi"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/isi_prestasi"
+            android:layout_width="105dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/judul_pretasi"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/gambar_profile_prestasi"
+            android:gravity="top"
+            android:text="@string/isi_prestasi"
+            android:textAppearance="@style/siswa_kelas"
+            app:layout_constraintStart_toStartOf="@+id/judul_pretasi"
+            app:layout_constraintTop_toBottomOf="@+id/judul_pretasi"
+            tools:ignore="TextContrastCheck" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
