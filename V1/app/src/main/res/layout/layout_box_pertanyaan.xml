@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/box_pertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/foto_profile_layout_box_pertanyaan"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nama_penanya_layout_box_pertanyaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="@string/nama_penanya_box_pertanyaan"
+            android:textAppearance="@style/nama_penanya"
+            app:layout_constraintBottom_toBottomOf="@+id/foto_profile_layout_box_pertanyaan"
+            app:layout_constraintStart_toEndOf="@+id/foto_profile_layout_box_pertanyaan"
+            app:layout_constraintTop_toTopOf="@+id/foto_profile_layout_box_pertanyaan" />
+
+        <View
+            android:id="@+id/frame_box_pertanyaan"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/biru_muda"
+            app:layout_constraintBottom_toTopOf="@+id/btn_jawab"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nama_penanya_layout_box_pertanyaan"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@id/frame_box_pertanyaan2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/abu_abu"
+            app:layout_constraintBottom_toBottomOf="@+id/frame_box_pertanyaan"
+            app:layout_constraintEnd_toEndOf="@+id/frame_box_pertanyaan"
+            app:layout_constraintStart_toStartOf="@+id/frame_box_pertanyaan"
+            app:layout_constraintTop_toTopOf="@+id/frame_box_pertanyaan" />
+
+        <TextView
+            android:id="@+id/mata_pelajaran_pertanyaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/mata_pelajaran_pertanyaan"
+            android:textAppearance="@style/mata_pelajaran"
+            app:layout_constraintStart_toStartOf="@+id/frame_box_pertanyaan2"
+            app:layout_constraintTop_toTopOf="@+id/frame_box_pertanyaan2" />
+
+        <View
+            android:id="@+id/eclipse"
+            android:layout_width="4dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/ic_eclipse"
+            app:layout_constraintBottom_toBottomOf="@+id/mata_pelajaran_pertanyaan"
+            app:layout_constraintStart_toEndOf="@+id/mata_pelajaran_pertanyaan"
+            app:layout_constraintTop_toTopOf="@+id/mata_pelajaran_pertanyaan" />
+
+        <TextView
+            android:id="@+id/coin_pertanyaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/coin_pertanyaan"
+            android:textAppearance="@style/mata_pelajaran"
+            app:layout_constraintBottom_toBottomOf="@+id/mata_pelajaran_pertanyaan"
+            app:layout_constraintStart_toEndOf="@+id/eclipse"
+            app:layout_constraintTop_toTopOf="@+id/mata_pelajaran_pertanyaan" />
+
+        <TextView
+            android:id="@+id/pertanyaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pertanyaan"
+            android:textAlignment="center"
+            android:textAppearance="@style/pertanyaan"
+            app:layout_constraintBottom_toBottomOf="@+id/frame_box_pertanyaan2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_kanan"
+            app:layout_constraintStart_toStartOf="@+id/guideline_kiri"
+            app:layout_constraintTop_toBottomOf="@+id/mata_pelajaran_pertanyaan" />
+
+        <Button
+            android:id="@+id/btn_follow"
+            android:layout_width="58dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/ic_btn_follow"
+            android:contentDescription="@string/tombol_add"
+            app:layout_constraintBottom_toBottomOf="@+id/nama_penanya_layout_box_pertanyaan"
+            app:layout_constraintStart_toEndOf="@+id/nama_penanya_layout_box_pertanyaan"
+            app:layout_constraintTop_toTopOf="@+id/nama_penanya_layout_box_pertanyaan"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_jawab"
+            android:layout_width="146dp"
+            android:layout_height="34dp"
+            android:background="@drawable/ic_btn_jawab"
+            android:contentDescription="@string/tombol_jawab_pertanyaan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_kiri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="7dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_kanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="7dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
