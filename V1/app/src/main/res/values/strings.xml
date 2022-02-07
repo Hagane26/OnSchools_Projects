@@ -37,4 +37,10 @@
     <string name="mau_belajar_apa_hari_ini">Mau Belajar\nApa Hari Ini?</string>
     <string name="yakin_gak_mau_ikut">Yakin Gak Mau Ikut?</string>
     <string name="bantu_percahkan_masalah">Bantu Percahkan Masalah!!</string>
+
+    \\SignUp Message
+    <String name="frontNameNull">Field Nama Depan Kosong</String>
+    <string name="BackNameNull">Field Nama Belakang Kosong</string>
+    <string name="emailValidation">Email tidak Valid</string>
+    <string name="usernamepasswordNull">Field Username atau Password Kosong</string>
 </resources>
