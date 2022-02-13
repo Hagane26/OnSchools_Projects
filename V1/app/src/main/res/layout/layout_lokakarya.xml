@@ -1,92 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    xmlns:tools="http://schemas.android.com/tools"
-    >
+    android:background="@color/white">
 
-    <!-- Label Berandamu -->
     <TextView
         android:id="@+id/berandamu"
         android:layout_width="93dp"
         android:layout_height="21dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="23dp"
         android:gravity="top"
         android:text="@string/berandamu"
-        android:textAppearance="@style/Label_beranda" />
+        android:textAppearance="@style/Label_beranda"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toTopOf="@+id/guideline_atas_layout_homr" />
 
-    <!-- border gambar profile -->
-    <LinearLayout
-        android:id="@+id/frame_photo_profile"
+    <ImageView
+        android:id="@+id/photo_profile"
         android:layout_width="52dp"
         android:layout_height="52dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="18dp"
         android:background="@drawable/ic_frame_poto_profile_standard"
-        android:contentDescription="@string/foto_profile" >
-        <ImageView
-            android:id="@+id/photo_profile"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/ic_frame_poto_profile_standard"
-            android:contentDescription="@string/foto_profile"/>
-    </LinearLayout>
-
-
-    <!-- Label Coin Balance -->
-
-    <TextView
-        android:id="@+id/coin_balance_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/berandamu"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="40dp"
-        android:layout_toEndOf="@+id/vector"
-        android:gravity="top"
-        android:text="@string/coin_balance_label"
-        android:textAppearance="@style/coin_balanc" />
-
-
-    <TextView
-        android:id="@+id/coin_balance_jumlah"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/berandamu"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="40dp"
-        android:layout_toEndOf="@+id/coin_balance_label"
-        android:gravity="top"
-        android:text="@string/coin_balance_jumlah"
-        android:textAppearance="@style/coin_balanc" />
+        android:contentDescription="@string/foto_profile"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
+        app:layout_constraintTop_toTopOf="@id/guideline_atas_layout_homr" />
 
     <View
         android:id="@+id/vector"
         android:layout_width="15dp"
         android:layout_height="14dp"
-        android:layout_below="@+id/berandamu"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="9dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/ic_coin" />
+        android:background="@drawable/ic_coin"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toBottomOf="@+id/berandamu" />
+
+    <TextView
+        android:id="@+id/coin_balance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:gravity="top"
+        android:text="@string/coin_balance_label"
+        android:textAppearance="@style/coin_balanc"
+        app:layout_constraintBottom_toBottomOf="@+id/vector"
+        app:layout_constraintStart_toEndOf="@+id/vector"
+        app:layout_constraintTop_toTopOf="@+id/vector" />
+
+    <TextView
+        android:id="@+id/coin_balance_jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coin_balance_jumlah"
+        android:textAppearance="@style/coin_balanc"
+        app:layout_constraintBottom_toBottomOf="@+id/coin_balance_label"
+        app:layout_constraintStart_toEndOf="@+id/coin_balance_label"
+        app:layout_constraintTop_toTopOf="@+id/coin_balance_label" />
 
     <EditText
         android:id="@+id/tv_pertanyaan_lokakarya"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_below="@+id/coin_balance_label"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="6dp"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="18dp"
         android:background="@drawable/ic_bg_tbx_question_lokakarya"
         android:hint="@string/hint_tbx_pertanyaan_lokakarya"
         android:importantForAutofill="no"
@@ -94,251 +69,80 @@
         android:paddingHorizontal="20dp"
         android:text=""
         android:textAppearance="@style/tbx_pertanyaan_lokakarya"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toBottomOf="@+id/vector"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
-    <!-- Baca,Pecahkan, dan dapatkan coin onschoolmu -->
     <TextView
         android:id="@+id/baca_pecahk"
         android:layout_width="257dp"
         android:layout_height="14dp"
-        android:layout_below="@+id/tv_pertanyaan_lokakarya"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="68dp"
         android:gravity="top"
         android:text="@string/baca_pecahkan"
-        android:textAppearance="@style/baca_pecahk" />
+        android:textAppearance="@style/baca_pecahk"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pertanyaan_lokakarya" />
 
     <HorizontalScrollView
-        android:id="@+id/H_ScrollviewPrestasi"
+        android:id="@+id/Hframe_box_prestasi"
         android:layout_width="match_parent"
         android:layout_height="78dp"
-        android:layout_below="@+id/baca_pecahk"
-        android:layout_marginTop="10dp">
-
-        <RelativeLayout
-            android:id="@+id/box_presentasi"
-            android:layout_width="238dp"
-            android:layout_height="match_parent"
-            android:background="#805A97BF">
-
-            <ImageView
-                android:id="@+id/gambar_profile_prestasi"
-                android:layout_width="74dp"
-                android:layout_height="67dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="8dp"
-                android:contentDescription="@string/gambar_profile_prestasi" />
-
-            <TextView
-                android:id="@+id/judul_pretasi"
-                android:layout_width="149dp"
-                android:layout_height="22dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginEnd="1dp"
-                android:layout_toEndOf="@+id/gambar_profile_prestasi"
-                android:text="@string/judul_prestasi"
-                android:textAppearance="@style/siswa_indon"
-                tools:ignore="TextContrastCheck" />
-
-            <TextView
-                android:id="@+id/isi_prestasi"
-                android:layout_width="105dp"
-                android:layout_height="24dp"
-                android:layout_below="@+id/judul_pretasi"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="14dp"
-                android:layout_marginEnd="45dp"
-                android:layout_marginBottom="12dp"
-                android:layout_toEndOf="@+id/gambar_profile_prestasi"
-                android:gravity="top"
-                android:text="@string/isi_prestasi"
-                android:textAppearance="@style/siswa_kelas"
-                tools:ignore="TextContrastCheck" />
-
-        </RelativeLayout>
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/baca_pecahk"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="-46dp">
 
     </HorizontalScrollView>
 
-    <!--Garis Horizontal-->
     <View
-        android:id="@+id/garis_atas"
+        android:id="@+id/garis_bawah"
         android:layout_width="wrap_content"
-        android:layout_height="2dp"
-        android:layout_below="@+id/H_ScrollviewPrestasi"
+        android:layout_height="3dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="false"
-        android:layout_marginStart="13dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="14dp"
-        android:background="@color/black" />
+        android:background="#203498DB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hframe_box_prestasi" />
+
 
     <ScrollView
-        android:id="@+id/V_Scroolposting_pertanyaan"
-        android:layout_width="match_parent"
-        android:layout_height="390dp"
-        android:layout_above="@+id/home_bg"
-        android:layout_below="@+id/garis_atas"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="-29dp">
+        android:id="@+id/scrollView_pertanyaan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toBottomOf="@id/garis_bawah"
+        tools:ignore="SpeakableTextPresentCheck">
 
-        <RelativeLayout
-            android:id="@+id/box_posting_pertanyaan"
-            android:layout_width="match_parent"
-            android:layout_height="169dp">
-
-            <ImageView
-                android:id="@+id/photo_profile_pertanyaan"
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="0dp"
-                android:contentDescription="@string/photo_profile_penanya_pertanyaan"
-                android:src="@drawable/ic_onschool" />
-
-            <TextView
-                android:id="@+id/nama_penanya"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="7dp"
-                android:layout_marginTop="1dp"
-                android:layout_toEndOf="@+id/photo_profile_pertanyaan"
-                android:text="@string/nama_penanya"
-                android:textAppearance="@style/nama_penanya" />
-
-            <Button
-                android:id="@+id/btn_follow"
-                android:layout_width="58dp"
-                android:layout_height="16dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="21dp"
-                android:layout_marginTop="1dp"
-                android:layout_toEndOf="@+id/nama_penanya"
-                android:background="@drawable/ic_btn_follow"
-                android:contentDescription="@string/tombol_add"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <RelativeLayout
-                android:id="@+id/frame_box_pertanyaan"
-                android:layout_width="wrap_content"
-                android:layout_height="103dp"
-                android:layout_below="@+id/btn_follow"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="0dp"
-                android:background="#A2D7FB">
-
-                <RelativeLayout
-                    android:id="@+id/frame_box_pertanyaan2"
-                    android:layout_width="323dp"
-                    android:layout_height="88dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="6dp"
-                    android:background="#E3E5EB">
-
-                    <TextView
-                        android:id="@+id/mata_pelajaran_pertanyaan"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginStart="7dp"
-                        android:layout_marginTop="1dp"
-                        android:text="@string/mata_pelajaran_pertanyaan"
-                        android:textAppearance="@style/mata_pelajaran" />
-
-                    <TextView
-                        android:id="@+id/pertanyaan"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="26dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="26dp"
-                        android:text="@string/pertanyaan"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/pertanyaan" />
-
-                    <TextView
-                        android:id="@+id/coin_pertanyaan"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginTop="1dp"
-                        android:layout_toEndOf="@+id/eclipse"
-                        android:text="@string/coin_pertanyaan"
-                        android:textAppearance="@style/mata_pelajaran" />
-
-                    <View
-                        android:id="@+id/eclipse"
-                        android:layout_width="4dp"
-                        android:layout_height="4dp"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginTop="6dp"
-                        android:layout_toEndOf="@+id/mata_pelajaran_pertanyaan"
-                        android:background="@drawable/ic_eclipse" />
-                </RelativeLayout>
-            </RelativeLayout>
-
-            <Button
-                android:id="@+id/btn_jawab"
-                android:layout_width="146dp"
-                android:layout_height="34dp"
-                android:layout_below="@+id/frame_box_pertanyaan"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="97dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="97dp"
-                android:layout_marginBottom="0dp"
-                android:background="@drawable/ic_btn_jawab"
-                android:contentDescription="@string/tombol_jawab_pertanyaan"
-                tools:ignore="TouchTargetSizeCheck" />
-
-        </RelativeLayout>
     </ScrollView>
-    <View
-        android:id="@+id/home_bg"
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_atas_layout_homr"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp"
-        android:background="@drawable/ic_bg_home" />
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01504788" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_kanan_layout_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96107054" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_kiri_layout_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03892944" />
+
+</android.support.constraint.ConstraintLayout>

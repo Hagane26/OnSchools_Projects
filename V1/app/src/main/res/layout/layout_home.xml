@@ -57,6 +57,7 @@
 
             <Button
                 android:id="@+id/btn_mapel_IPA"
+                android:layout_marginHorizontal="10dp"
                 android:layout_width="134dp"
                 android:layout_height="134dp"
                 android:background="@drawable/ic_btn_matkul_ipa"
@@ -68,6 +69,7 @@
 
             <Button
                 android:id="@+id/btn_mapel_IPS"
+                android:layout_marginHorizontal="10dp"
                 android:layout_width="134dp"
                 android:layout_height="134dp"
                 android:layout_marginStart="14dp"
@@ -79,6 +81,7 @@
 
             <Button
                 android:id="@+id/btn_mapel_Bahasa"
+                android:layout_marginHorizontal="10dp"
                 android:layout_width="134dp"
                 android:layout_height="134dp"
                 android:layout_marginStart="14dp"
@@ -90,6 +93,7 @@
 
             <Button
                 android:id="@+id/btn_mapel_umum"
+                android:layout_marginHorizontal="10dp"
                 android:layout_width="134dp"
                 android:layout_height="134dp"
                 android:layout_marginStart="14dp"
