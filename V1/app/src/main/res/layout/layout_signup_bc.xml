@@ -86,6 +86,36 @@
             app:layout_constraintTop_toBottomOf="@+id/tbx_email" />
 
         <EditText
+            android:id="@+id/tbx_username"
+            android:layout_width="256dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/biru_laut"
+            android:hint="@string/username"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingHorizontal="36dp"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/tbx_nama"
+            android:textColorHint="@color/biru_laut"
+            app:layout_constraintEnd_toEndOf="@+id/tbx_email"
+            app:layout_constraintStart_toStartOf="@+id/tbx_email"
+            app:layout_constraintTop_toBottomOf="@+id/contoh_email"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <View
+            android:id="@+id/icon_username"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginVertical="13dp"
+            android:background="@drawable/ic_icon_username"
+            app:layout_constraintBottom_toBottomOf="@+id/tbx_username"
+            app:layout_constraintEnd_toEndOf="@+id/tbx_username"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="@+id/tbx_username"
+            app:layout_constraintTop_toBottomOf="@+id/contoh_email"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <EditText
             android:id="@+id/tbx_password_signup"
             android:layout_width="256dp"
             android:layout_height="48dp"
@@ -97,9 +127,9 @@
             android:textAlignment="textStart"
             android:textAppearance="@style/tbx_nama"
             android:textColorHint="@color/biru_laut"
-            app:layout_constraintEnd_toEndOf="@+id/tbx_email"
-            app:layout_constraintStart_toStartOf="@+id/tbx_email"
-            app:layout_constraintTop_toBottomOf="@+id/contoh_email"
+            app:layout_constraintEnd_toEndOf="@+id/tbx_username"
+            app:layout_constraintStart_toStartOf="@+id/tbx_username"
+            app:layout_constraintTop_toBottomOf="@+id/tbx_username"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <View
@@ -111,7 +141,9 @@
             app:layout_constraintBottom_toBottomOf="@+id/tbx_password_signup"
             app:layout_constraintEnd_toEndOf="@+id/tbx_password_signup"
             app:layout_constraintHorizontal_bias="0.04"
-            app:layout_constraintStart_toStartOf="@+id/tbx_password_signup" />
+            app:layout_constraintStart_toStartOf="@+id/tbx_password_signup"
+            app:layout_constraintTop_toBottomOf="@+id/tbx_username"
+            app:layout_constraintVertical_bias="0.04" />
 
         <Button
             android:id="@+id/btn_register"
@@ -192,6 +224,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.45" />
+            app:layout_constraintGuide_percent="0.40902874" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

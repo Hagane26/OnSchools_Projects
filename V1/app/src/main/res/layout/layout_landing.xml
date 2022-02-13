@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Layout_dasar"
@@ -31,36 +31,47 @@
         app:layout_constraintStart_toStartOf="@+id/welcome_landing"
         app:layout_constraintTop_toBottomOf="@+id/welcome_landing"
         tools:ignore="TextContrastCheck" />
-
-    <Button
-        android:id="@+id/btn_signin"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_btn_singin"
         android:layout_width="229dp"
         android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="83dp"
-        android:background="@drawable/ic_btn_signup"
+        app:cardCornerRadius="27dp"
+        app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="@+id/welcome_landing"
         app:layout_constraintStart_toStartOf="@+id/welcome_landing"
-        app:layout_constraintTop_toBottomOf="@+id/belajar_dim"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/belajar_dim">
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="229dp"
+            android:layout_height="54dp"
+            android:background="@drawable/ic_btn_signup"
+            app:layout_constraintEnd_toEndOf="@+id/welcome_landing"
+            app:layout_constraintStart_toStartOf="@+id/welcome_landing"
+            app:layout_constraintTop_toBottomOf="@+id/belajar_dim"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
         android:layout_width="229dp"
         android:layout_height="54dp"
-        android:layout_below="@+id/btn_signin"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
-        android:background="@drawable/ic_btn_login"
-        app:layout_constraintEnd_toEndOf="@+id/btn_signin"
-        app:layout_constraintStart_toStartOf="@+id/btn_signin"
-        app:layout_constraintTop_toBottomOf="@+id/btn_signin"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:cardElevation="100dp"
+        app:cardCornerRadius="27dp"
+        app:layout_constraintEnd_toEndOf="@+id/card_btn_singin"
+        app:layout_constraintStart_toStartOf="@+id/card_btn_singin"
+        app:layout_constraintTop_toBottomOf="@+id/card_btn_singin">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="229dp"
+            android:layout_height="54dp"
+            android:background="@drawable/ic_btn_login"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.cardview.widget.CardView>
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/atas_layout_landing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.121751025" />
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

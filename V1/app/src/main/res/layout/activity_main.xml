@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Layout_dasar"
@@ -36,19 +36,25 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
-    <Button
-        android:id="@+id/btn_start"
-        android:layout_width="139dp"
-        android:layout_height="43dp"
-        android:layout_below="@+id/onschool_logo"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/ic_btn_start"
-        android:contentDescription="@string/button_start"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/onschool_logo"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/onschool_logo">
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="139dp"
+            android:layout_height="43dp"
+            android:background="@drawable/ic_btn_start"
+            android:contentDescription="@string/button_start"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.cardview.widget.CardView>
+
 
     <View
         android:id="@+id/btm_right_acc"
@@ -69,4 +75,4 @@
         android:background="@drawable/ic_btm_left_acc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
