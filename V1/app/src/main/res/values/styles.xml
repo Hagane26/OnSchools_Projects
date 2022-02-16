@@ -266,4 +266,35 @@
             16dp
         </item>
     </style>
+    <style name="label_btn_jadwal">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            9sp
+        </item>
+        <item name="android:textStyle">
+            normal
+        </item>
+        <item name="android:textColor">
+            @color/biru_laut
+        </item>
+        <item name="lineHeight">
+            10.55dp
+        </item>
+    </style>
+    <style name="label_btn_home">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            9sp
+        </item>
+        <item name="android:textStyle">
+            normal
+        </item>
+        <item name="android:textColor">
+            @color/abu_abu
+        </item>
+    </style>
     </resources>

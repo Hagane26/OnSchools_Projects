@@ -38,4 +38,9 @@
     <string name="yakin_gak_mau_ikut">Yakin Gak Mau Ikut?</string>
     <string name="bantu_percahkan_masalah">Bantu Percahkan Masalah!!</string>
     <string name="nama_penanya_box_pertanyaan">Nama Pananya</string>
+    <string name="manage_waktumu">Manage Waktumu!</string>
+    <string name="btn_class">Class</string>
+    <string name="btn_forum">Forum</string>
+    <string name="btn_setting">Setting</string>
+    <string name="btn_materi">Materi</string>
 </resources>

@@ -43,6 +43,18 @@
         app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
         app:layout_constraintTop_toBottomOf="@+id/nama_user_layout_home" />
 
+    <Button
+        android:id="@+id/btn_jadwal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableTop="@drawable/ic_btn_jadwal"
+        android:text="@string/manage_waktumu"
+        android:background="#00000000"
+        android:textAppearance="@style/label_btn_jadwal"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
+        app:layout_constraintTop_toBottomOf="@+id/foto_profile_layout_home" />
+
     <HorizontalScrollView
         android:id="@+id/frame_mapel_layout_login"
         android:layout_width="match_parent"
@@ -174,6 +186,13 @@
         app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
         app:layout_constraintTop_toBottomOf="@+id/bantu_pecahkan_masalah"
         tools:ignore="SpeakableTextPresentCheck"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_atas_layout_homr"
