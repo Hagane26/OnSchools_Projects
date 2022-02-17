@@ -116,7 +116,7 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() {
                 Map<String,String> params = new HashMap<>();
-                params.put("nama",ND + " " + ND);
+                params.put("nama",ND + " " + NB);
                 params.put("asal_sekolah","t");
                 params.put("alamat","t");
                 params.put("email",email);
