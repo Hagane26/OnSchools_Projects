@@ -16,15 +16,31 @@
         android:textAppearance="@style/Label_beranda"
         app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
         app:layout_constraintTop_toTopOf="@+id/guideline_atas_layout_homr" />
-
-    <ImageView
+    <View
         android:id="@+id/photo_profile"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:background="@drawable/ic_frame_poto_profile_standard"
         android:contentDescription="@string/foto_profile"
         app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
-        app:layout_constraintTop_toTopOf="@id/guideline_atas_layout_homr" />
+        app:layout_constraintTop_toTopOf="@id/guideline_atas_layout_homr"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardCornerRadius="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/photo_profile"
+        app:layout_constraintEnd_toEndOf="@+id/photo_profile"
+        app:layout_constraintStart_toStartOf="@+id/photo_profile"
+        app:layout_constraintTop_toTopOf="@+id/photo_profile">
+        <ImageButton
+            android:id="@+id/btn_photo_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_circular"
+            android:src="@drawable/ic_photo_profile"
+            android:scaleType="centerInside"/>
+    </androidx.cardview.widget.CardView>
 
     <View
         android:id="@+id/vector"
@@ -85,7 +101,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
         app:layout_constraintTop_toBottomOf="@+id/tv_pertanyaan_lokakarya" />
 
-    <HorizontalScrollView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/Hframe_box_prestasi"
         android:layout_width="match_parent"
         android:layout_height="78dp"
@@ -94,7 +110,7 @@
         tools:ignore="SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="-46dp">
 
-    </HorizontalScrollView>
+    </androidx.recyclerview.widget.RecyclerView>
 
     <View
         android:id="@+id/garis_bawah"
@@ -111,7 +127,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Hframe_box_prestasi" />
 
 
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/scrollView_pertanyaan"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -122,7 +138,7 @@
         app:layout_constraintTop_toBottomOf="@id/garis_bawah"
         tools:ignore="SpeakableTextPresentCheck">
 
-    </ScrollView>
+    </androidx.recyclerview.widget.RecyclerView>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_atas_layout_homr"
