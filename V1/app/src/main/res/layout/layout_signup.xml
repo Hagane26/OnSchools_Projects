@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/ic_bg_signup">
-
         <EditText
             android:id="@+id/tbx_nama_depan"
             android:layout_width="115dp"
@@ -112,7 +111,6 @@
             app:layout_constraintEnd_toEndOf="@+id/tbx_password_signup"
             app:layout_constraintHorizontal_bias="0.04"
             app:layout_constraintStart_toStartOf="@+id/tbx_password_signup" />
-
         <Button
             android:id="@+id/btn_register"
             android:layout_width="170dp"
@@ -138,19 +136,18 @@
 
         <com.google.android.gms.common.SignInButton
             android:id="@+id/btn_google"
-            android:layout_width="109dp"
-            android:layout_height="49dp"
-            android:background="@drawable/ic_icon_google"
-            app:layout_constraintBaseline_toBaselineOf="@+id/btn_twitter"
+            app:buttonSize="icon_only"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             app:layout_constraintEnd_toStartOf="@+id/btn_twitter"
-            app:layout_constraintHorizontal_bias="0.305"
             app:layout_constraintStart_toStartOf="@+id/btn_register"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            app:layout_constraintTop_toBottomOf="@+id/or_login_with"/>
 
         <Button
             android:id="@+id/btn_twitter"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:background="@drawable/ic_icon_twitter"
             app:layout_constraintEnd_toEndOf="@+id/or_login_with"
             app:layout_constraintStart_toStartOf="@+id/or_login_with"
@@ -159,8 +156,8 @@
 
         <Button
             android:id="@+id/btn_fb"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:background="@drawable/ic_icon_fb"
             app:layout_constraintBaseline_toBaselineOf="@+id/btn_twitter"
             app:layout_constraintEnd_toEndOf="@+id/btn_register"
@@ -194,5 +191,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.45" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

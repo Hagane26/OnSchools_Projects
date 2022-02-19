@@ -338,4 +338,19 @@
             300
         </item>
     </style>
+    <style name="btn_cari_materi">
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            @color/black
+        </item>
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
 </resources>
