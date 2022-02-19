@@ -28,11 +28,13 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/frame_foto_profile_layout_home"
-        app:cardCornerRadius="15dp"
         android:layout_width="31dp"
         android:layout_height="31dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
         app:layout_constraintTop_toTopOf="@id/guideline_atas_layout_homr">
+
         <ImageButton
             android:id="@+id/foto_profile_layout_home"
             android:layout_width="wrap_content"
