@@ -26,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
         Button btn_mapel_ips = findViewById(R.id.btn_mapel_IPS);
 
         //navigation define btns
-        Button btn_home = findViewById(R.id.btn_homeOnschools);
+        Button btn_home = findViewById(R.id.btn_home);
         Button btn_kelas = findViewById(R.id.btn_kelas);
         Button btn_forum = findViewById(R.id.btn_forum);
         Button btn_materi = findViewById(R.id.btn_materi);

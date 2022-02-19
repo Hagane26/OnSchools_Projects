@@ -62,6 +62,5 @@
         android:textAppearance="@style/label_btn_home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_materi"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btn_forum" />
 </androidx.constraintlayout.widget.ConstraintLayout>
