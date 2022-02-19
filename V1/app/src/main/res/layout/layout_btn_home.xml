@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="77dp"
-    android:background="@drawable/ic_bg_home"
-    android:layout_gravity="bottom">
+    android:background="@drawable/ic_bg_home">
 
     <Button
         android:id="@+id/btn_kelas"
@@ -56,16 +55,13 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
-        android:id="@+id/btn_homeOnschools"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@color/transparent"
-        android:drawableTop="@drawable/ic_circular"
-        android:paddingTop="7dp"
+        android:id="@+id/btn_home"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:background="@drawable/ic_btn_home_round"
         android:textAppearance="@style/label_btn_home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_materi"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btn_forum" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
