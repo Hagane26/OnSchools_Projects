@@ -297,4 +297,45 @@
             @color/abu_abu
         </item>
     </style>
-    </resources>
+    <style name="label_mukadima_layout">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            14sp
+        </item>
+        <item name="android:textStyle">
+            normal
+        </item>
+        <item name="android:textColor">
+            @color/abu_abu_gelap
+        </item>
+        <item name="lineHeight">
+            16.41dp
+        </item>
+        <item name="fontWeight">
+            300
+        </item>
+    </style>
+
+    <style name="label2">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            14sp
+        </item>
+        <item name="android:textStyle">
+            normal
+        </item>
+        <item name="android:textColor">
+            @color/biru_laut
+        </item>
+        <item name="lineHeight">
+            16.41dp
+        </item>
+        <item name="fontWeight">
+            300
+        </item>
+    </style>
+</resources>

@@ -16,14 +16,17 @@
         android:textAppearance="@style/Label_beranda"
         app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
         app:layout_constraintTop_toTopOf="@+id/guideline_atas_layout_homr" />
+
     <View
         android:id="@+id/photo_profile"
         android:layout_width="52dp"
         android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/ic_frame_poto_profile_standard"
         android:contentDescription="@string/foto_profile"
         app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
-        app:layout_constraintTop_toTopOf="@id/guideline_atas_layout_homr"/>
+        app:layout_constraintTop_toTopOf="@id/guideline_atas_layout_homr" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="40dp"
