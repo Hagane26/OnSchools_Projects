@@ -54,16 +54,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <ImageButton
+    <Button
         android:id="@+id/btn_home"
         android:layout_width="77dp"
         android:layout_height="77dp"
-        android:src="@drawable/ic_btn_home"
-        android:background="@drawable/ic_circular"
+        android:background="@drawable/ic_btn_home_round"
         android:textAppearance="@style/label_btn_home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_materi"
-        app:layout_constraintStart_toEndOf="@+id/btn_forum"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.488" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_forum" />
 </androidx.constraintlayout.widget.ConstraintLayout>

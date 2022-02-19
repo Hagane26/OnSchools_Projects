@@ -28,7 +28,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/frame_foto_profile_layout_home"
-        app:cardCornerRadius="45dp"
+        app:cardCornerRadius="15dp"
         android:layout_width="31dp"
         android:layout_height="31dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
