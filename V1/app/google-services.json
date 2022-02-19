@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "426246514413",
+    "project_id": "onschools-project",
+    "storage_bucket": "onschools-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426246514413:android:6aec8ae49d6753660c8ee4",
+        "android_client_info": {
+          "package_name": "com.example.onschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426246514413-ditp36p92sebetvu81idf172qvc6dp3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.onschool",
+            "certificate_hash": "ec09b9ddd513f8e0c57e79455a847304b5d4bfac"
+          }
+        },
+        {
+          "client_id": "426246514413-8fqojh0pfqtpkbfs6q5e904u0lsuh7qt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZWLfpZcd-OF-n6kx9566R2W99v887J3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426246514413-8fqojh0pfqtpkbfs6q5e904u0lsuh7qt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
