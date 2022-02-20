@@ -43,6 +43,7 @@
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:src="@drawable/ic_photo_profile" />
+
     </androidx.cardview.widget.CardView>
 
     <View
@@ -168,4 +169,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.04" />
+
+    <Button
+        android:id="@+id/btn_browse_foto"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_profile"
+        app:layout_constraintEnd_toEndOf="@+id/frame_profile" />
 </androidx.constraintlayout.widget.ConstraintLayout>

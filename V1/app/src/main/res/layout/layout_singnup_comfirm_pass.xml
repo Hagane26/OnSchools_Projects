@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout_dasar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru_laut">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Layout_depan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_bg_signup">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/bawah_layout_signup"
+            app:layout_constraintEnd_toStartOf="@+id/kanan_layout_signup"
+            app:layout_constraintStart_toStartOf="@+id/kiri_layout_signup"
+            app:layout_constraintTop_toTopOf="@+id/atas_layout_signup"
+            app:layout_constraintVertical_bias="0.2">
+
+            <EditText
+                android:id="@+id/tbx_password"
+                android:layout_width="256dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/biru_laut"
+                android:hint="@string/password"
+                android:importantForAutofill="no"
+                android:paddingHorizontal="36dp"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/tbx_nama"
+                android:textColorHint="@color/biru_laut"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <View
+                android:id="@+id/icon_password"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginVertical="13dp"
+                android:background="@drawable/ic_icon_pass"
+                app:layout_constraintEnd_toEndOf="@+id/tbx_password"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="@+id/tbx_password"
+                app:layout_constraintTop_toTopOf="@+id/tbx_password" />
+
+            <EditText
+                android:id="@+id/tbx_password_confirm"
+                android:layout_width="256dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/biru_laut"
+                android:hint="@string/confirm_password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:paddingHorizontal="36dp"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/tbx_nama"
+                android:textColorHint="@color/biru_laut"
+                app:layout_constraintEnd_toEndOf="@+id/tbx_password"
+                app:layout_constraintStart_toStartOf="@+id/tbx_password"
+                app:layout_constraintTop_toBottomOf="@+id/tbx_password"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <View
+                android:id="@+id/icon_comfirm_pass"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginVertical="13dp"
+                android:background="@drawable/ic_icon_pass"
+                app:layout_constraintBottom_toBottomOf="@+id/tbx_password_confirm"
+                app:layout_constraintEnd_toEndOf="@+id/tbx_password_confirm"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="@+id/tbx_password_confirm" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/ic_btn_register_layout_signup"
+                app:layout_constraintEnd_toEndOf="@+id/tbx_password_confirm"
+                app:layout_constraintStart_toStartOf="@+id/tbx_password_confirm"
+                app:layout_constraintTop_toBottomOf="@+id/tbx_password_confirm"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/kiri_layout_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.06326034" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bawah_layout_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8946648" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/kanan_layout_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94160587" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/atas_layout_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

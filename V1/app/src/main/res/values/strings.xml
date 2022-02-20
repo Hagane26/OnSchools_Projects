@@ -50,4 +50,5 @@
     <string name="ubah_password">Ubah Password</string>
     <string name="pesan">Pesan</string>
     <string name="dukungan">Dukungan</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
