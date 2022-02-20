@@ -1,8 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_bg_profile_layout"
+    android:background="@drawable/bg_profile_layout"
     >
 
+    <View
+        android:id="@+id/frame_internal_profile"
+        android:layout_width="221dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_bg_profile"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toTopOf="@+id/guideline_atas_layout_homr" />
+
+    <View
+        android:id="@+id/frame_profile"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:background="@drawable/ic_circular"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_internal_profile"
+        app:layout_constraintEnd_toEndOf="@+id/frame_internal_profile"
+        app:layout_constraintStart_toStartOf="@+id/frame_internal_profile"
+        app:layout_constraintTop_toTopOf="@+id/frame_internal_profile" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/frame_foto_profile"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:cardCornerRadius="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_profile"
+        app:layout_constraintEnd_toEndOf="@+id/frame_profile"
+        app:layout_constraintStart_toStartOf="@+id/frame_profile"
+        app:layout_constraintTop_toTopOf="@+id/frame_profile">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/foto_profile_layout_profile"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_photo_profile" />
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/frame_btn_layout_profile"
+        android:layout_width="356dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn_layout_profile"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toBottomOf="@id/frame_internal_profile" />
+
+    <Button
+        android:id="@+id/btn_your_coin"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:background="@drawable/ic_btn_your_coin"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_btn_layout_profile"
+        app:layout_constraintEnd_toStartOf="@+id/btn_parantal_control"
+        app:layout_constraintStart_toStartOf="@+id/frame_btn_layout_profile"
+        app:layout_constraintTop_toTopOf="@+id/frame_btn_layout_profile"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <Button
+        android:id="@+id/btn_parantal_control"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:background="@drawable/ic_btn_parental_control"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_btn_layout_profile"
+        app:layout_constraintEnd_toEndOf="@+id/frame_btn_layout_profile"
+        app:layout_constraintStart_toStartOf="@+id/frame_btn_layout_profile"
+        app:layout_constraintTop_toTopOf="@+id/frame_btn_layout_profile"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:background="@drawable/ic_btn_logout"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_btn_layout_profile"
+        app:layout_constraintEnd_toEndOf="@+id/frame_btn_layout_profile"
+        app:layout_constraintStart_toEndOf="@+id/btn_parantal_control"
+        app:layout_constraintTop_toTopOf="@+id/frame_btn_layout_profile"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <Button
+        android:id="@+id/btn_ubah_profile"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/biru"
+        android:drawableEnd="@drawable/ic_btn_arrow"
+        android:text="@string/ubah_profile"
+        android:layout_marginTop="25dp"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/Label_beranda"
+        android:paddingHorizontal="15dp"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/frame_btn_layout_profile" />
+    <Button
+        android:id="@+id/btn_ubah_password"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/biru"
+        android:drawableEnd="@drawable/ic_btn_arrow"
+        android:text="@string/ubah_password"
+        android:textAlignment="textStart"
+        android:paddingHorizontal="15dp"
+        android:textAllCaps="false"
+        android:textAppearance="@style/Label_beranda"
+        app:layout_constraintTop_toBottomOf="@id/btn_ubah_profile" />
+    <Button
+        android:id="@+id/btn_pesan"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/biru"
+        android:drawableEnd="@drawable/ic_btn_arrow"
+        android:text="@string/pesan"
+        android:textAlignment="textStart"
+        android:paddingHorizontal="15dp"
+        android:textAllCaps="false"
+        android:textAppearance="@style/Label_beranda"
+        app:layout_constraintTop_toBottomOf="@id/btn_ubah_password" />
+    <Button
+        android:id="@+id/btn_dukungan"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/biru"
+        android:drawableEnd="@drawable/ic_btn_arrow"
+        android:text="@string/dukungan"
+        android:textAlignment="textStart"
+        android:paddingHorizontal="15dp"
+        android:textAllCaps="false"
+        android:textAppearance="@style/Label_beranda"
+        app:layout_constraintTop_toBottomOf="@id/btn_pesan" />
+
+    <include
+        android:id="@+id/NavigationMenu"
+        layout="@layout/layout_btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_atas_layout_homr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04"
+        app:layout_constraintTop_toTopOf="@id/frame_internal_profile" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_kanan_layout_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_kiri_layout_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
 </androidx.constraintlayout.widget.ConstraintLayout>

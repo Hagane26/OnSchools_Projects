@@ -46,4 +46,8 @@
     <string name="Belajar_materi">Belajar Materi,Praktikum, dan Soal soal di\nONSchool.id</string>
     <string name="belajar_onschool_pilihannya">Belajar ?ONSchool Pilihannya</string>
     <string name="cari_materi">Cari Materi IPA</string>
+    <string name="ubah_profile">Ubah Profile</string>
+    <string name="ubah_password">Ubah Password</string>
+    <string name="pesan">Pesan</string>
+    <string name="dukungan">Dukungan</string>
 </resources>
