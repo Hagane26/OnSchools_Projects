@@ -65,7 +65,8 @@
         app:layout_constraintEnd_toStartOf="@+id/btn_parantal_control"
         app:layout_constraintStart_toStartOf="@+id/frame_btn_layout_profile"
         app:layout_constraintTop_toTopOf="@+id/frame_btn_layout_profile"
-        app:layout_constraintVertical_bias="0.571" />
+        app:layout_constraintVertical_bias="0.571"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/btn_parantal_control"
@@ -76,7 +77,8 @@
         app:layout_constraintEnd_toEndOf="@+id/frame_btn_layout_profile"
         app:layout_constraintStart_toStartOf="@+id/frame_btn_layout_profile"
         app:layout_constraintTop_toTopOf="@+id/frame_btn_layout_profile"
-        app:layout_constraintVertical_bias="0.571" />
+        app:layout_constraintVertical_bias="0.571"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/btn_logout"
@@ -87,7 +89,8 @@
         app:layout_constraintEnd_toEndOf="@+id/frame_btn_layout_profile"
         app:layout_constraintStart_toEndOf="@+id/btn_parantal_control"
         app:layout_constraintTop_toTopOf="@+id/frame_btn_layout_profile"
-        app:layout_constraintVertical_bias="0.571" />
+        app:layout_constraintVertical_bias="0.571"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/btn_ubah_profile"
@@ -176,5 +179,6 @@
         android:layout_height="35dp"
         android:background="@drawable/ic_camera"
         app:layout_constraintBottom_toBottomOf="@+id/frame_profile"
-        app:layout_constraintEnd_toEndOf="@+id/frame_profile" />
+        app:layout_constraintEnd_toEndOf="@+id/frame_profile"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
