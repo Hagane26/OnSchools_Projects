@@ -63,7 +63,7 @@
         </item>
 
         <item name="android:textColor">
-            #FFFFFF
+            @color/white
         </item>
 
     </style>
@@ -352,5 +352,36 @@
         <item name="android:textStyle">
             bold
         </item>
+    </style>
+    <style name="tittle_box_mapel">
+        <item name="android:textSize">
+            24sp
+        </item>
+
+        <item name="android:textColor">
+            @color/white
+        </item>
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+    <style name="kelas_mapel">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            9sp
+        </item>
+
+        <item name="android:textColor">
+            @color/white
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+
     </style>
 </resources>

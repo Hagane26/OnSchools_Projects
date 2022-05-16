@@ -16,6 +16,7 @@
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/bg_circular.xml" value="0.240625" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/bg_eclipse.xml" value="0.240625" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/bg_frame_poto_profile_standard.xml" value="0.240625" />
+        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/bg_mapel.xml" value="0.1945" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/bg_profile_layout.xml" value="0.240625" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/bg_reactangle.xml" value="0.1" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/bg_sub_btn_layout_profile.xml" value="0.23697916666666666" />
@@ -34,6 +35,7 @@
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/ic_bg_tbx_question_lokakarya.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/ic_btm_left_acc.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/ic_btm_right_acc.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/ic_btn_arrow.xml" value="0.1945" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/ic_btn_cari_materi.xml" value="0.240625" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/ic_btn_class.xml" value="0.240625" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/ic_btn_follow.xml" value="0.22552083333333334" />
@@ -84,13 +86,16 @@
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/ic_right_arrow.xml" value="0.240625" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/drawable/text.xml" value="0.21944444444444444" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout.xml" value="0.209375" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_berita.xml" value="0.67" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_box_berita.xml" value="0.5829596412556054" />
-        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_box_mapel.xml" value="0.5" />
+        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_box_mapel.xml" value="0.67" />
+        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_box_mapel_biologi.xml" value="0.1953125" />
+        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_box_mapel_kimia.xml" value="0.209375" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_box_pertanyaan.xml" value="0.49309245483528164" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_btn_home.xml" value="0.33" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_home.xml" value="0.387037037037037" />
-        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_kelas_mapel.xml" value="0.25" />
+        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_kelas_mapel.xml" value="0.22" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_landing.xml" value="0.33" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_login.xml" value="0.33" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_lokakarya.xml" value="0.22" />

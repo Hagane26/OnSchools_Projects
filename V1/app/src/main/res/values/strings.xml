@@ -51,4 +51,8 @@
     <string name="pesan">Pesan</string>
     <string name="dukungan">Dukungan</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="fisika">FISIKA</string>
+    <string name="kelas_10_12">Kelas 10-12</string>
+    <string name="kimia">KIMIA</string>
+    <string name="biologi">BIOLOGI</string>
 </resources>
