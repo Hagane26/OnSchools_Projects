@@ -95,49 +95,52 @@
     <Button
         android:id="@+id/btn_ubah_profile"
         android:layout_width="match_parent"
-        android:layout_height="54dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
         android:background="@color/biru"
         android:drawableEnd="@drawable/ic_btn_arrow"
-        android:text="@string/ubah_profile"
-        android:layout_marginTop="25dp"
-        android:textAlignment="textStart"
-        android:textAppearance="@style/Label_beranda"
         android:paddingHorizontal="15dp"
+        android:text="@string/ubah_profile"
+        android:textAlignment="textStart"
         android:textAllCaps="false"
+        android:textAppearance="@style/Label_beranda"
         app:layout_constraintTop_toBottomOf="@id/frame_btn_layout_profile" />
+
     <Button
         android:id="@+id/btn_ubah_password"
         android:layout_width="match_parent"
-        android:layout_height="54dp"
+        android:layout_height="50dp"
         android:background="@color/biru"
         android:drawableEnd="@drawable/ic_btn_arrow"
+        android:paddingHorizontal="15dp"
         android:text="@string/ubah_password"
         android:textAlignment="textStart"
-        android:paddingHorizontal="15dp"
         android:textAllCaps="false"
         android:textAppearance="@style/Label_beranda"
         app:layout_constraintTop_toBottomOf="@id/btn_ubah_profile" />
+
     <Button
         android:id="@+id/btn_pesan"
         android:layout_width="match_parent"
-        android:layout_height="54dp"
+        android:layout_height="50dp"
         android:background="@color/biru"
         android:drawableEnd="@drawable/ic_btn_arrow"
+        android:paddingHorizontal="15dp"
         android:text="@string/pesan"
         android:textAlignment="textStart"
-        android:paddingHorizontal="15dp"
         android:textAllCaps="false"
         android:textAppearance="@style/Label_beranda"
         app:layout_constraintTop_toBottomOf="@id/btn_ubah_password" />
+
     <Button
         android:id="@+id/btn_dukungan"
         android:layout_width="match_parent"
-        android:layout_height="54dp"
+        android:layout_height="50dp"
         android:background="@color/biru"
         android:drawableEnd="@drawable/ic_btn_arrow"
+        android:paddingHorizontal="15dp"
         android:text="@string/dukungan"
         android:textAlignment="textStart"
-        android:paddingHorizontal="15dp"
         android:textAllCaps="false"
         android:textAppearance="@style/Label_beranda"
         app:layout_constraintTop_toBottomOf="@id/btn_pesan" />

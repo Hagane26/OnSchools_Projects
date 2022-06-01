@@ -1,5 +1,6 @@
 package com.example.onschool;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,7 +42,7 @@ public class HomeActivity extends AppCompatActivity {
         btn_mapel_ips.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sessionManager.logOut();
+
             }
         });
 
@@ -49,21 +50,21 @@ public class HomeActivity extends AppCompatActivity {
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HomeActivity.this, "Home Clicked", Toast.LENGTH_SHORT).show();
+
             }
         });
 
         btn_kelas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HomeActivity.this, "Kelas Clicked", Toast.LENGTH_SHORT).show();
+
             }
         });
 
         btn_forum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HomeActivity.this, "Forum Clicked", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(HomeActivity.this,LokakaryaActivity.class));
             }
         });
 
@@ -77,7 +78,7 @@ public class HomeActivity extends AppCompatActivity {
         btn_settting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HomeActivity.this, "Setting Clicked", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(HomeActivity.this,ProfileActivity.class));
             }
         });
         //---------------------------------------
