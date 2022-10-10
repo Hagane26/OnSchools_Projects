@@ -92,7 +92,8 @@ public class LoginActivity extends AppCompatActivity {
 
                     if (meta_status.equals("success")){
 
-                        sessionManager.createSession(String.valueOf(data_user_detail_id),
+                        sessionManager.createSession(
+                                String.valueOf(data_user_detail_id),
                                 data_user_detail_nama,
                                 data_user_detail_kelas,
                                 data_user_detail_asalSekolah,
