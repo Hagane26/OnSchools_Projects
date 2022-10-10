@@ -14,7 +14,7 @@
         android:layout_marginTop="7dp"
         android:text="@string/hi"
         android:textAppearance="@style/label_hi_layout_home"
-        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintStart_toStartOf="@+id/home.guideline_kiri"
         app:layout_constraintTop_toTopOf="@+id/home.guideline_atas" />
 
     <TextView
@@ -32,7 +32,7 @@
         android:layout_height="31dp"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
+        app:layout_constraintEnd_toStartOf="@+id/home.guideline_kanan"
         app:layout_constraintTop_toTopOf="@id/home.guideline_atas">
 
         <ImageButton
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:text="@string/mau_belajar_apa_hari_ini"
         android:textAppearance="@style/roboto.black.Bold.36"
-        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintStart_toStartOf="@+id/home.guideline_kiri"
         app:layout_constraintTop_toBottomOf="@+id/home.nama" />
 
     <Button
@@ -63,7 +63,7 @@
         android:text="@string/manage_waktumu"
         android:background="#00000000"
         android:textAppearance="@style/label_btn_jadwal"
-        app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
+        app:layout_constraintEnd_toStartOf="@+id/home.guideline_kanan"
         app:layout_constraintTop_toBottomOf="@+id/home.profile.frame" />
 
     <HorizontalScrollView
