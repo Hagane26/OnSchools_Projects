@@ -94,7 +94,7 @@ public class SignupActivity extends AppCompatActivity {
             GoogleSignInAccount account = task.getResult(ApiException.class);
 
             // Signed in successfully, show authenticated UI.
-            Toast.makeText(SignupActivity.this, "-> " + account.getEmail().toString() + "\n" + account.getDisplayName().toString() , Toast.LENGTH_SHORT).show();
+            Toast.makeText(SignupActivity.this, "-> " + account.getEmail().toString() + "\n" + account.getIdToken() , Toast.LENGTH_SHORT).show();
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
@@ -124,14 +124,15 @@ public class SignupActivity extends AppCompatActivity {
                    if (ND.equals(null) || NB.equals(null)){
                        Toast.makeText(ctx, "Field username atau password kosong", Toast.LENGTH_SHORT).show();
                    }else{
-                       jsonParse(ctx,ND,NB,email,Password);
+                       String UserName = ND + " " + NB;
+                       jsonParse(ctx,UserName,email,Password);
                    }
                 }
             }
         }
     }
 
-    public void jsonParse(Context ctx, String ND,String NB, String email,  String Password){
+    public void jsonParse(Context ctx, String UserName, String email,  String Password){
         String url = "http://onschool.id/api/register";
         RequestQueue rq = Volley.newRequestQueue(ctx);
 
@@ -166,9 +167,9 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() {
                 Map<String,String> params = new HashMap<>();
-                params.put("nama",ND + " " + NB);
-                params.put("asal_sekolah","t");
-                params.put("alamat","t");
+                params.put("nama",UserName);
+                params.put("asal_sekolah","-");
+                params.put("alamat","-");
                 params.put("email",email);
                 params.put("password",Password);
                 return params;

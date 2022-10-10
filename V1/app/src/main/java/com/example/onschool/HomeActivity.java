@@ -1,5 +1,6 @@
 package com.example.onschool;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
@@ -27,6 +28,7 @@ public class HomeActivity extends AppCompatActivity {
         Button btn_mapel_ips = findViewById(R.id.btn_mapel_IPS);
 
         //navigation define btns
+        Context ctxnow = HomeActivity.this;
         Button btn_home = findViewById(R.id.btn_home);
         Button btn_kelas = findViewById(R.id.btn_kelas);
         Button btn_forum = findViewById(R.id.btn_forum);
@@ -50,7 +52,7 @@ public class HomeActivity extends AppCompatActivity {
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(ctxnow,HomeActivity.class));
             }
         });
 
@@ -64,21 +66,21 @@ public class HomeActivity extends AppCompatActivity {
         btn_forum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,LokakaryaActivity.class));
+                startActivity(new Intent(ctxnow,LokakaryaActivity.class));
             }
         });
 
         btn_materi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HomeActivity.this, "Materi Clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctxnow, "Materi Clicked", Toast.LENGTH_SHORT).show();
             }
         });
 
         btn_settting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,ProfileActivity.class));
+                startActivity(new Intent(ctxnow,ProfileActivity.class));
             }
         });
         //---------------------------------------
