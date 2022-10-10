@@ -6,11 +6,11 @@
     android:background="@drawable/bg_mapel">
 
     <TextView
-        android:id="@+id/judul_mapel"
+        android:id="@+id/box_mapel.biologi.judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/biologi"
-        android:textAppearance="@style/tittle_box_mapel"
+        android:text="@string/box_mapel.biologi.judul"
+        android:textAppearance="@style/roboto.white.Bold.24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,8 +19,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/kelas_10_12"
-        android:textAppearance="@style/kelas_mapel"
+        android:text="@string/box_mapel.kelas"
+        android:textAppearance="@style/roboto.white.Bold.9"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/guideline5"

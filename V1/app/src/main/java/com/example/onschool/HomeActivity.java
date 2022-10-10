@@ -24,7 +24,7 @@ public class HomeActivity extends AppCompatActivity {
         sessionManager.checkLogin();
 
         TextView tv_username = findViewById(R.id.nama_user_layout_home);
-        Button btn_mapel_ips = findViewById(R.id.btn_mapel_IPS);
+        Button btn_mapel_ips = findViewById(R.id.home_btn_mapel_IPS);
 
         //navigation define btns
         Button btn_home = findViewById(R.id.btn_home);

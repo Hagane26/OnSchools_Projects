@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Label_beranda">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            18sp
+        </item>
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+    <style name="coin_balanc">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            12sp
+        </item>
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+    <style name="baca_pecahk">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            12sp
+        </item>
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+    <style name="mulai_belaj">
+
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+        <item name="android:textSize">
+            18sp
+        </item>
+        <item name="android:textColor">
+            #FEFEFF
+        </item>
+        <item name="lineHeight">
+            21.09dp
+        </item>
+        <item name="fontWeight">
+            700
+        </item>
+    </style>
+    <style name="siswa_indon">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            9sp
+        </item>
+
+        <item name="android:textColor">
+            @color/white
+        </item>
+
+    </style>
+    <style name="siswa_kelas">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            5sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+    <style name="nama_penanya">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <style name="btn_follow">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #958F8F
+        </item>
+
+    </style>
+    <style name="mata_pelajaran">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            9sp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <style name="pertanyaan">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <style name="tbx_pertanyaan_lokakarya">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #938282
+        </item>
+    </style>
+    <style name="welcome_landing">
+        <item name="android:textSize">
+            24sp
+        </item>
+
+        <item name="android:textColor">
+            #3498DB
+        </item>
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+    <style name="welcome_word_landing">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            13sp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <style name="tbx_nama">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #3498DB
+        </item>
+
+    </style>
+    <style name="contoh_email">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            9sp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <style name="opening_layout_login">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            24sp
+        </item>
+
+        <item name="android:textColor">
+            @color/biru_laut
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+        <item name="lineHeight">
+            28dp
+        </item>
+
+    </style>
+    <style name="btn_lupa_pass">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:textColor">
+            @color/biru_laut
+        </item>
+        <item name="lineHeight">
+            16dp
+        </item>
+    </style>
+    <style name="label_hi_layout_home">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            18sp
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+        <item name="android:textColor">
+            @color/black
+        </item>
+        <item name="lineHeight">
+            16dp
+        </item>
+    </style>
+    <style name="label_hi_layout_home1">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            36sp
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+        <item name="android:textColor">
+            @color/black
+        </item>
+        <item name="lineHeight">
+            16dp
+        </item>
+    </style>
+    <style name="label_btn_jadwal">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            9sp
+        </item>
+        <item name="android:textStyle">
+            normal
+        </item>
+        <item name="android:textColor">
+            @color/biru_laut
+        </item>
+        <item name="lineHeight">
+            10.55dp
+        </item>
+    </style>
+    <style name="label_btn_home">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            9sp
+        </item>
+        <item name="android:textStyle">
+            normal
+        </item>
+        <item name="android:textColor">
+            @color/abu_abu
+        </item>
+    </style>
+    <style name="label_mukadima_layout">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            14sp
+        </item>
+        <item name="android:textStyle">
+            normal
+        </item>
+        <item name="android:textColor">
+            @color/abu_abu_gelap
+        </item>
+        <item name="lineHeight">
+            16.41dp
+        </item>
+        <item name="fontWeight">
+            300
+        </item>
+    </style>
+
+    <style name="label2">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            14sp
+        </item>
+        <item name="android:textStyle">
+            normal
+        </item>
+        <item name="android:textColor">
+            @color/biru_laut
+        </item>
+        <item name="lineHeight">
+            16.41dp
+        </item>
+        <item name="fontWeight">
+            300
+        </item>
+    </style>
+    <style name="btn_cari_materi">
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            @color/black
+        </item>
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+    <style name="tittle_box_mapel">
+        <item name="android:textSize">
+            24sp
+        </item>
+
+        <item name="android:textColor">
+            @color/white
+        </item>
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+    <style name="kelas_mapel">
+        <item name="fontFamily">
+            Roboto
+        </item>
+        <item name="android:textSize">
+            9sp
+        </item>
+
+        <item name="android:textColor">
+            @color/white
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+
+    </style>
+</resources>

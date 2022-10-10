@@ -13,10 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:text="@string/silahkan_login"
+
         android:textAppearance="@style/opening_layout_login"
         app:layout_constraintStart_toStartOf="@+id/acc_layout_login"
         app:layout_constraintTop_toTopOf="@+id/guideline_atas_layout_login" />
-
     <View
         android:id="@+id/acc_layout_login"
         android:layout_width="374dp"
@@ -105,15 +105,18 @@
 
     <Button
         android:id="@+id/btn_login_layout_login"
-        android:layout_width="249dp"
-        android:layout_height="69dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/btn_lupa_pass"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/ic_btn_login_layout_login"
+        android:background="@drawable/ic_btn_login_biru"
+        android:elevation="20dp"
+        android:text="@string/login"
+        android:textAppearance="@style/roboto.white.Bold.24"
+
         app:layout_constraintEnd_toEndOf="@+id/tbx_password_login"
         app:layout_constraintStart_toStartOf="@+id/tbx_password_login"
-        app:layout_constraintTop_toBottomOf="@+id/acc_layout_login"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/acc_layout_login" tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/btn_register_layout_login"
@@ -121,6 +124,7 @@
         android:layout_height="18dp"
         android:layout_below="@id/btn_login_layout_login"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
         android:background="@null"
         android:text="@string/register"
         android:textAppearance="@style/btn_lupa_pass"

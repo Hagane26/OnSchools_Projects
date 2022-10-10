@@ -8,35 +8,35 @@
     android:background="@color/white">
 
     <TextView
-        android:id="@+id/salam_layout_home"
+        android:id="@+id/home.salam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
         android:text="@string/hi"
         android:textAppearance="@style/label_hi_layout_home"
         app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
-        app:layout_constraintTop_toTopOf="@+id/guideline_atas_layout_homr" />
+        app:layout_constraintTop_toTopOf="@+id/home.guideline_atas" />
 
     <TextView
-        android:id="@+id/nama_user_layout_home"
+        android:id="@+id/home.nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nama_user_layout_home"
         android:textAppearance="@style/label_hi_layout_home"
-        app:layout_constraintBaseline_toBaselineOf="@+id/salam_layout_home"
-        app:layout_constraintStart_toEndOf="@+id/salam_layout_home" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/home.salam"
+        app:layout_constraintStart_toEndOf="@+id/home.salam" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/frame_foto_profile_layout_home"
+        android:id="@+id/home.profile.frame"
         android:layout_width="31dp"
         android:layout_height="31dp"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
-        app:layout_constraintTop_toTopOf="@id/guideline_atas_layout_homr">
+        app:layout_constraintTop_toTopOf="@id/home.guideline_atas">
 
         <ImageButton
-            android:id="@+id/foto_profile_layout_home"
+            android:id="@+id/home.profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_circular"
@@ -46,16 +46,16 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/mau_belajar_apa"
+        android:id="@+id/home.label1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/mau_belajar_apa_hari_ini"
-        android:textAppearance="@style/label_hi_layout_home1"
+        android:textAppearance="@style/roboto.black.Bold.36"
         app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
-        app:layout_constraintTop_toBottomOf="@+id/nama_user_layout_home" />
+        app:layout_constraintTop_toBottomOf="@+id/home.nama" />
 
     <Button
-        android:id="@+id/btn_jadwal"
+        android:id="@+id/home.btn_jadwal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -64,14 +64,14 @@
         android:background="#00000000"
         android:textAppearance="@style/label_btn_jadwal"
         app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
-        app:layout_constraintTop_toBottomOf="@+id/frame_foto_profile_layout_home" />
+        app:layout_constraintTop_toBottomOf="@+id/home.profile.frame" />
 
     <HorizontalScrollView
-        android:id="@+id/frame_mapel_layout_login"
+        android:id="@+id/home.frame.mapel"
         android:layout_width="match_parent"
         android:layout_height="137dp"
         android:layout_marginTop="25dp"
-        app:layout_constraintTop_toBottomOf="@+id/mau_belajar_apa"
+        app:layout_constraintTop_toBottomOf="@+id/home.label1"
         tools:ignore="SpeakableTextPresentCheck">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -79,7 +79,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/btn_mapel_IPA"
+                android:id="@+id/home.btn_mapel.IPA"
                 android:layout_marginHorizontal="10dp"
                 android:layout_width="134dp"
                 android:layout_height="134dp"
@@ -91,45 +91,45 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/btn_mapel_IPS"
+                android:id="@+id/home.btn_mapel.IPS"
                 android:layout_marginHorizontal="10dp"
                 android:layout_width="134dp"
                 android:layout_height="134dp"
                 android:layout_marginStart="14dp"
                 android:background="@drawable/ic_btn_matkul_ips"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btn_mapel_IPA"
+                app:layout_constraintStart_toEndOf="@+id/home.btn_mapel.IPA"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/btn_mapel_Bahasa"
+                android:id="@+id/home.btn_mapel.Bahasa"
                 android:layout_marginHorizontal="10dp"
                 android:layout_width="134dp"
                 android:layout_height="134dp"
                 android:layout_marginStart="14dp"
                 android:background="@drawable/ic_btn_matkul_bahasa"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btn_mapel_IPS"
+                app:layout_constraintStart_toEndOf="@+id/home.btn_mapel.IPS"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/btn_mapel_umum"
+                android:id="@+id/home.btn_mapel.umum"
                 android:layout_marginHorizontal="10dp"
                 android:layout_width="134dp"
                 android:layout_height="134dp"
                 android:layout_marginStart="14dp"
                 android:background="@drawable/ic_btn_matkul_umum"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@id/btn_mapel_Bahasa"
+                app:layout_constraintStart_toEndOf="@id/home.btn_mapel.Bahasa"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="SpeakableTextPresentCheck" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </HorizontalScrollView>
 
     <View
-        android:id="@+id/garis_atas"
+        android:id="@+id/home.garis_atas"
         android:layout_width="wrap_content"
         android:layout_height="3dp"
         android:layout_alignParentStart="true"
@@ -140,31 +140,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frame_mapel_layout_login" />
+        app:layout_constraintTop_toBottomOf="@+id/home.frame.mapel" />
 
     <TextView
-        android:id="@+id/Yakin_gak_mau_ikut"
+        android:id="@+id/home.label2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="9dp"
         android:text="@string/yakin_gak_mau_ikut"
         android:textAppearance="@style/label_hi_layout_home"
-        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
-        app:layout_constraintTop_toBottomOf="@+id/garis_atas" />
+        app:layout_constraintStart_toStartOf="@+id/home.guideline_kiri"
+        app:layout_constraintTop_toBottomOf="@+id/home.garis_atas" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/Hframe_box_prestasi"
+        android:id="@+id/home.frame.box_prestasi"
         android:layout_width="match_parent"
         android:layout_height="78dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/Yakin_gak_mau_ikut"
+        app:layout_constraintTop_toBottomOf="@+id/home.label2"
         tools:ignore="SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="-46dp">
 
     </androidx.recyclerview.widget.RecyclerView>
 
     <View
-        android:id="@+id/garis_bawah"
+        android:id="@+id/home.garis_bawah"
         android:layout_width="wrap_content"
         android:layout_height="3dp"
         android:layout_alignParentStart="true"
@@ -175,45 +175,45 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Hframe_box_prestasi" />
+        app:layout_constraintTop_toBottomOf="@+id/home.frame.box_prestasi" />
 
     <TextView
-        android:id="@+id/bantu_pecahkan_masalah"
+        android:id="@+id/home.label3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/bantu_percahkan_masalah"
         android:textAppearance="@style/label_hi_layout_home"
-        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
-        app:layout_constraintTop_toBottomOf="@+id/garis_bawah" />
+        app:layout_constraintStart_toStartOf="@+id/home.guideline_kiri"
+        app:layout_constraintTop_toBottomOf="@+id/home.garis_bawah" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/scrollView_pertanyaan"
+        android:id="@+id/home.frame.box_pertanyaan"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="9dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
-        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
-        app:layout_constraintTop_toBottomOf="@+id/bantu_pecahkan_masalah"
+        app:layout_constraintEnd_toStartOf="@+id/home.guideline_kanan"
+        app:layout_constraintStart_toStartOf="@+id/home.guideline_kiri"
+        app:layout_constraintTop_toBottomOf="@+id/home.label3"
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_atas_layout_homr"
+        android:id="@+id/home.guideline_atas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.01504788" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_kanan_layout_home"
+        android:id="@+id/home.guideline_kanan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.96107054" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_kiri_layout_home"
+        android:id="@+id/home.guideline_kiri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"

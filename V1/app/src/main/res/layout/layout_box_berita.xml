@@ -2,17 +2,18 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/box_berita"
     android:layout_width="283dp"
     android:layout_height="78dp"
     xmlns:tools="http://schemas.android.com/tools">
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/frame_box_prestasi"
+        android:id="@+id/box_berita.frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#805A97BF">
 
         <ImageView
-            android:id="@+id/gambar_profile_prestasi"
+            android:id="@+id/box_berita.photo_profile"
             android:layout_width="74dp"
             android:layout_height="67dp"
             android:layout_alignParentStart="true"
@@ -35,25 +36,24 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="6dp"
             android:layout_marginEnd="4dp"
-            android:layout_toEndOf="@+id/gambar_profile_prestasi"
-            android:text="@string/judul_prestasi"
-            android:textAppearance="@style/siswa_indon"
+            android:text="@string/box_berita.judul_prestasi"
+            android:textAppearance="@style/roboto.white.Normal.9"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/gambar_profile_prestasi"
+            app:layout_constraintStart_toEndOf="@+id/box_berita.photo_profile"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/isi_prestasi"
+            android:id="@+id/box_berita.isi_prestasi"
             android:layout_width="105dp"
             android:layout_height="24dp"
             android:layout_below="@+id/judul_pretasi"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="14dp"
-            android:layout_toEndOf="@+id/gambar_profile_prestasi"
+            android:layout_toEndOf="@+id/box_berita.photo_profile"
             android:gravity="top"
-            android:text="@string/isi_prestasi"
-            android:textAppearance="@style/siswa_kelas"
+            android:text="@string/box_berita.isi_prestasi"
+            android:textAppearance="@style/roboto.white.Normal.5"
             app:layout_constraintStart_toStartOf="@+id/judul_pretasi"
             app:layout_constraintTop_toBottomOf="@+id/judul_pretasi"
             tools:ignore="TextContrastCheck" />

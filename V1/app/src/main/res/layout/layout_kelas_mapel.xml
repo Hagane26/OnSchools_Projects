@@ -4,10 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_bg_kelas_matkul">
-
+    android:background="@drawable/bg_kelas_mapel">
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/ic_bg_kelas_matkul"/>
     <Button
-        android:id="@+id/btn_search_materi"
+        android:id="@+id/kelas_mapel.btn_search_materi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -20,15 +23,15 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/btn_add_chat"
+        android:id="@+id/kelas_mapel.btn_add_chat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/transparent"
         android:paddingTop="24dp"
         android:drawableTop="@drawable/ic_icon_add_chat"
-        app:layout_constraintEnd_toEndOf="@+id/btn_search_materi"
-        app:layout_constraintStart_toStartOf="@+id/btn_search_materi"
-        app:layout_constraintTop_toBottomOf="@+id/btn_search_materi"
+        app:layout_constraintEnd_toEndOf="@+id/kelas_mapel.btn_search_materi"
+        app:layout_constraintStart_toStartOf="@+id/kelas_mapel.btn_search_materi"
+        app:layout_constraintTop_toBottomOf="@+id/kelas_mapel.btn_search_materi"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.cardview.widget.CardView
@@ -50,7 +53,7 @@
             android:background="@drawable/ic_btn_cari_materi"
             android:text="@string/cari_materi"
             android:textAllCaps="false"
-            android:textAppearance="@style/btn_cari_materi"
+            android:textAppearance="@style/roboto.black.Bold.18"
             app:layout_constraintBottom_toTopOf="@id/guideline_atas" />
     </androidx.cardview.widget.CardView>
     <View
@@ -85,21 +88,21 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/label_mukadima_layout"
+        android:id="@+id/kelas_mapel.label1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Belajar_materi"
-        android:textAppearance="@style/label_mukadima_layout"
+        android:text="@string/kelas_mapel.label1"
+        android:textAppearance="@style/roboto.abu_abu_gelap.Normal.14"
         app:layout_constraintStart_toStartOf="@+id/guideline_kiri"
         app:layout_constraintTop_toTopOf="@id/guideline_atas" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/list_mapel"
+        android:id="@+id/kelas_mapel.list_mapel"
         android:layout_width="match_parent"
         android:layout_height="116dp"
         android:layout_marginTop="5dp"
-        app:layout_constraintStart_toStartOf="@id/label_mukadima_layout"
-        app:layout_constraintTop_toBottomOf="@id/label_mukadima_layout">
+        app:layout_constraintStart_toStartOf="@id/kelas_mapel.label1"
+        app:layout_constraintTop_toBottomOf="@id/kelas_mapel.label1">
 
     </androidx.recyclerview.widget.RecyclerView>
 
@@ -109,17 +112,17 @@
         android:layout_height="4dp"
         android:layout_marginTop="15dp"
         android:background="#70C4C4C4"
-        app:layout_constraintEnd_toEndOf="@+id/list_mapel"
+        app:layout_constraintEnd_toEndOf="@+id/kelas_mapel.list_mapel"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/list_mapel" />
+        app:layout_constraintTop_toBottomOf="@+id/kelas_mapel.list_mapel" />
 
     <TextView
-        android:id="@+id/label2"
+        android:id="@+id/kelas_mapel.label2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/belajar_onschool_pilihannya"
-        android:textAppearance="@style/label2"
+        android:text="@string/kelas_mapel.label2"
+        android:textAppearance="@style/roboto.biru_laut.Normal.14"
         app:layout_constraintStart_toStartOf="@+id/guideline_kiri"
         app:layout_constraintTop_toBottomOf="@+id/garis_horizontal" />
 
