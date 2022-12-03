@@ -14,7 +14,7 @@
         android:layout_marginStart="25dp"
         android:text="@string/silahkan_login"
 
-        android:textAppearance="@style/opening_layout_login"
+        android:textAppearance="@style/roboto.biru_laut.Bold.24"
         app:layout_constraintStart_toStartOf="@+id/acc_layout_login"
         app:layout_constraintTop_toTopOf="@+id/guideline_atas_layout_login" />
     <View
@@ -51,7 +51,7 @@
         android:inputType="text"
         android:paddingHorizontal="36dp"
         android:textAlignment="textStart"
-        android:textAppearance="@style/tbx_nama"
+        android:textAppearance="@style/roboto.biru_laut.Normal.12"
         android:textColorHint="@color/biru_laut"
         app:layout_constraintEnd_toEndOf="@+id/acc_layout_login"
         app:layout_constraintHorizontal_bias="0.466"
@@ -82,7 +82,7 @@
         android:inputType="textPassword"
         android:paddingHorizontal="36dp"
         android:textAlignment="textStart"
-        android:textAppearance="@style/tbx_nama"
+        android:textAppearance="@style/roboto.biru_laut.Normal.14"
         android:textColorHint="@color/biru_laut"
         app:layout_constraintEnd_toEndOf="@+id/tbx_username_login"
         app:layout_constraintStart_toStartOf="@+id/tbx_username_login"
@@ -96,13 +96,23 @@
         android:layout_centerHorizontal="true"
         android:background="@null"
         android:text="@string/lupa_password"
-        android:textAppearance="@style/btn_lupa_pass"
+        android:textAppearance="@style/roboto.biru_laut.Underline.14"
         app:layout_constraintEnd_toEndOf="@+id/tbx_password_login"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/tbx_password_login"
         app:layout_constraintTop_toBottomOf="@+id/tbx_password_login"
         tools:ignore="TouchTargetSizeCheck" />
-
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_btn_singin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_lupa_pass"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="27dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tbx_password_login"
+        app:layout_constraintStart_toStartOf="@+id/tbx_password_login"
+        app:layout_constraintTop_toBottomOf="@+id/acc_layout_login" >
     <Button
         android:id="@+id/btn_login_layout_login"
         android:layout_width="wrap_content"
@@ -117,20 +127,20 @@
         app:layout_constraintEnd_toEndOf="@+id/tbx_password_login"
         app:layout_constraintStart_toStartOf="@+id/tbx_password_login"
         app:layout_constraintTop_toBottomOf="@+id/acc_layout_login" tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/btn_register_layout_login"
         android:layout_width="wrap_content"
         android:layout_height="18dp"
-        android:layout_below="@id/btn_login_layout_login"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:background="@null"
         android:text="@string/register"
-        android:textAppearance="@style/btn_lupa_pass"
-        app:layout_constraintEnd_toEndOf="@+id/btn_login_layout_login"
-        app:layout_constraintStart_toStartOf="@+id/btn_login_layout_login"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login_layout_login"
+        android:textAppearance="@style/roboto.biru_laut.Underline.14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_btn_singin"
         tools:ignore="TouchTargetSizeCheck" />
 
     <androidx.constraintlayout.widget.Guideline

@@ -21,7 +21,7 @@
             android:importantForAutofill="no"
             android:inputType="text"
             android:textAlignment="center"
-            android:textAppearance="@style/tbx_nama"
+            android:textAppearance="@style/roboto.biru_laut.Normal.12"
             android:textColorHint="@color/biru_laut"
             app:layout_constraintStart_toStartOf="@+id/tbx_email"
             app:layout_constraintTop_toTopOf="@id/atas_layout_signup"
@@ -36,7 +36,7 @@
             android:importantForAutofill="no"
             android:inputType="text"
             android:textAlignment="center"
-            android:textAppearance="@style/tbx_nama"
+            android:textAppearance="@style/roboto.biru_laut.Normal.12"
             android:textColorHint="@color/biru_laut"
             app:layout_constraintBaseline_toBaselineOf="@+id/tbx_nama_depan"
             app:layout_constraintEnd_toEndOf="@+id/tbx_email"
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:text="@string/contoh_onschool_gmail_com"
-            android:textAppearance="@style/contoh_email"
+            android:textAppearance="@style/roboto.black.Normal.9"
             app:layout_constraintEnd_toEndOf="@+id/tbx_email"
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="@+id/tbx_email"
@@ -94,7 +94,7 @@
             android:inputType="textPassword"
             android:paddingHorizontal="36dp"
             android:textAlignment="textStart"
-            android:textAppearance="@style/tbx_nama"
+            android:textAppearance="@style/roboto.biru_laut.Normal.12"
             android:textColorHint="@color/biru_laut"
             app:layout_constraintEnd_toEndOf="@+id/tbx_email"
             app:layout_constraintStart_toStartOf="@+id/tbx_email"
@@ -111,34 +111,44 @@
             app:layout_constraintEnd_toEndOf="@+id/tbx_password_signup"
             app:layout_constraintHorizontal_bias="0.04"
             app:layout_constraintStart_toStartOf="@+id/tbx_password_signup" />
-        <Button
-            android:id="@+id/btn_register"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_btn_register"
             android:layout_width="170dp"
             android:layout_height="46dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
-            android:background="@drawable/ic_btn_register_layout_signup"
+            app:cardCornerRadius="27dp"
+            app:cardElevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/tbx_password_signup"
             app:layout_constraintStart_toStartOf="@+id/tbx_password_signup"
-            app:layout_constraintTop_toBottomOf="@+id/tbx_password_signup"
+            app:layout_constraintTop_toBottomOf="@+id/tbx_password_signup" >
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_btn_register"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/or_login_with"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_register"
+            android:layout_below="@id/card_btn_register"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
             android:text="@string/or_login_with"
-            app:layout_constraintEnd_toEndOf="@+id/btn_register"
-            app:layout_constraintStart_toStartOf="@+id/btn_register"
-            app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+            android:textAppearance="@style/roboto.black.Normal.14"
+            app:layout_constraintEnd_toEndOf="@+id/card_btn_register"
+            app:layout_constraintStart_toStartOf="@+id/card_btn_register"
+            app:layout_constraintTop_toBottomOf="@+id/card_btn_register" />
 
         <com.google.android.gms.common.SignInButton
             android:id="@+id/btn_google"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
+            android:layout_marginTop="8dp"
             app:buttonSize="icon_only"
             app:layout_constraintEnd_toEndOf="@+id/or_login_with"
             app:layout_constraintStart_toStartOf="@+id/or_login_with"

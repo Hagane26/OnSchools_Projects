@@ -80,6 +80,19 @@
             bold
         </item>
     </style>
+    <style name="roboto.biru_laut.Bold">
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+    <!--TextStyle Underline-->
+    <style name="roboto.biru_laut.Underline">
+        <item name="android:textStyle">
+            normal
+        </item>
+    </style>
+
 
     <!--TextSize 5sp-->
     <style name="roboto.white.Normal.5">
@@ -110,12 +123,23 @@
             12sp
         </item>
     </style>
+    <style name="roboto.biru_laut.Normal.12">
+        <item name="android:textSize">
+            12sp
+        </item>
+    </style>
     <style name="roboto.black.Normal.12">
         <item name="android:textSize">
             12sp
         </item>
     </style>
 
+    <!--TextSize 13sp-->
+    <style name="roboto.black.Normal.13">
+        <item name="android:textSize">
+            13sp
+        </item>
+    </style>
     <!--TextSize 14sp-->
     <style name="roboto.abu_abu_gelap.Normal.14">
         <item name="android:textSize">
@@ -124,6 +148,18 @@
     </style>
 
     <style name="roboto.biru_laut.Normal.14">
+        <item name="android:textSize">
+            14sp
+        </item>
+    </style>
+
+    <style name="roboto.biru_laut.Underline.14">
+        <item name="android:textSize">
+            14sp
+        </item>
+    </style>
+
+    <style name="roboto.black.Normal.14">
         <item name="android:textSize">
             14sp
         </item>
@@ -148,6 +184,16 @@
 
     <!--TextSize 24sp-->
     <style name="roboto.white.Bold.24">
+        <item name="android:textSize">
+            24sp
+        </item>
+    </style>
+    <style name="roboto.black.Bold.24">
+        <item name="android:textSize">
+            24sp
+        </item>
+    </style>
+    <style name="roboto.biru_laut.Bold.24">
         <item name="android:textSize">
             24sp
         </item>

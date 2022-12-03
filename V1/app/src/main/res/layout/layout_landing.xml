@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/welcome_landing"
         android:textAlignment="center"
-        android:textAppearance="@style/welcome_landing"
+        android:textAppearance="@style/roboto.biru_laut.Bold.24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         android:layout_marginTop="5dp"
         android:text="@string/welcome_word_landing"
         android:textAlignment="textStart"
-        android:textAppearance="@style/welcome_word_landing"
+        android:textAppearance="@style/roboto.black.Normal.13"
         app:layout_constraintStart_toStartOf="@+id/welcome_landing"
         app:layout_constraintTop_toBottomOf="@+id/welcome_landing"
         tools:ignore="TextContrastCheck" />

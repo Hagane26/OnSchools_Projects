@@ -148,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="9dp"
         android:text="@string/yakin_gak_mau_ikut"
-        android:textAppearance="@style/label_hi_layout_home"
+        android:textAppearance="@style/roboto.black.Bold.18"
         app:layout_constraintStart_toStartOf="@+id/home.guideline_kiri"
         app:layout_constraintTop_toBottomOf="@+id/home.garis_atas" />
 
@@ -183,7 +183,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/bantu_percahkan_masalah"
-        android:textAppearance="@style/label_hi_layout_home"
+        android:textAppearance="@style/roboto.black.Bold.18"
         app:layout_constraintStart_toStartOf="@+id/home.guideline_kiri"
         app:layout_constraintTop_toBottomOf="@+id/home.garis_bawah" />
 

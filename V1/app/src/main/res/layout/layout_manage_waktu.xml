@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
         android:text="@string/hi"
-        android:textAppearance="@style/label_hi_layout_home"
+        android:textAppearance="@style/roboto.black.Bold.24"
         app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
         app:layout_constraintTop_toTopOf="@+id/guideline_atas_layout_homr" />
 
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nama_user_layout_home"
-        android:textAppearance="@style/label_hi_layout_home"
+        android:textAppearance="@style/roboto.black.Bold.24"
         app:layout_constraintBaseline_toBaselineOf="@+id/salam_layout_home"
         app:layout_constraintStart_toEndOf="@+id/salam_layout_home" />
 
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/mulai_atur_waktumu"
-        android:textAppearance="@style/label_hi_layout_home"
+        android:textAppearance="@style/roboto.black.Bold.24"
         app:layout_constraintStart_toStartOf="@+id/salam_layout_home"
         app:layout_constraintTop_toBottomOf="@+id/nama_user_layout_home" />
 
@@ -63,16 +63,39 @@
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/manage_waktu.btn_atur_jadwal"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/manage_waktu.frame.atur_jadwal"
+        android:layout_width="183dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="18dp"
+        app:cardCornerRadius="27dp"
+        app:cardElevation="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
+        app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
+        app:layout_constraintTop_toBottomOf="@+id/manage_waktu.frame.lihat_jadwal">
+
+        <Button
+            android:id="@+id/manage_waktu.btn_atur_jadwal"
+            android:layout_width="183dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_btn_atur_jadwal" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/manage_waktu.frame.lihat_jadwal"
         android:layout_width="183dp"
         android:layout_height="45dp"
         android:layout_marginTop="39dp"
-        android:background="@drawable/ic_btn_atur_jadwal"
+        app:cardElevation="100dp"
+        app:cardCornerRadius="27dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline_kanan_layout_home"
         app:layout_constraintStart_toStartOf="@+id/guideline_kiri_layout_home"
-        app:layout_constraintTop_toBottomOf="@+id/frame_profile" />
-
+        app:layout_constraintTop_toBottomOf="@+id/frame_profile" >
+        <Button
+            android:id="@+id/manage_waktu.btn_lihat_jadwal"
+            android:layout_width="183dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_btn_lihat_jadwal"/>
+    </androidx.cardview.widget.CardView>
     <include
         android:id="@+id/NavigationMenu"
         layout="@layout/layout_btn_home"
