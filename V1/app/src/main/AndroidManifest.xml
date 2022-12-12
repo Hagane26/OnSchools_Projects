@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.onschool">
+    package="id.onschool">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,20 +14,27 @@
 
 
         <activity
-            android:name=".HomeActivity"
+            android:name="id.onschool.WebMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="id.onschool.HomeActivity"/>
+        <activity
+            android:name="id.onschool.MainActivity" />
+        <activity
+            android:name="id.onschool.LandingActivity" />
+        <activity
+            android:name="id.onschool.LoginActivity" />
+        <activity
+            android:name="id.onschool.LokakaryaActivity" />
+        <activity
+            android:name="id.onschool.SignupActivity" />
+        <activity
+            android:name="id.onschool.ProfileActivity" />
 
-        <activity android:name=".MainActivity" android:label="@string/app_name"></activity>
-        <activity android:name=".LandingActivity" android:label="@string/app_name"></activity>
-        <activity android:name=".LoginActivity" android:label="@string/app_name"></activity>
-        <activity android:name=".LokakaryaActivity" android:label="@string/app_name"></activity>
-        <activity android:name=".SignupActivity" android:label="@string/app_name"></activity>
-        <activity android:name=".ProfileActivity" android:label="@string/app_name"></activity>
 
     </application>
 

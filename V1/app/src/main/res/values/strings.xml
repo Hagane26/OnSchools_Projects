@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">onschool</string>
+    <string name="app_name">OnSchool</string>
     <string name="berandamu">Berandamu</string>
     <string name="coin_balance_label">Coin Balance: </string>
     <string name="coin_balance_jumlah">100</string>

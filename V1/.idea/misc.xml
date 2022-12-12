@@ -112,7 +112,8 @@
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_login.xml" value="0.22" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_lokakarya.xml" value="0.25" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_lokakarya_Test.xml" value="0.20969202898550723" />
-        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_manage_waktu.xml" value="0.25" />
+        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_main.xml" value="0.209375" />
+        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_manage_waktu.xml" value="0.1" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_profile.xml" value="0.25" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_signin.xml" value="0.33" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_signup.xml" value="0.33" />
@@ -120,6 +121,7 @@
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_singnup_comfirm_pass.xml" value="0.25" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/layout_test.xml" value="0.44499381953028433" />
         <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/layout/testing_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Amatsume/AndroidStudioProjects/OnSchools_Projects/V1/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.20833333333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20833333333333334" />
