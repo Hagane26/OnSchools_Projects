@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="id.onschool">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.gms.permissions.AD_ID"/>
 
     <application
         android:allowBackup="true"
@@ -10,32 +12,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.OnSchool">
-
+        android:theme="@style/Theme.OnSchool"
+        android:networkSecurityConfig="@xml/network_security_config">
 
         <activity
-            android:name="id.onschool.WebMain"
+            android:name=".WebMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="id.onschool.HomeActivity"/>
-        <activity
-            android:name="id.onschool.MainActivity" />
-        <activity
-            android:name="id.onschool.LandingActivity" />
-        <activity
-            android:name="id.onschool.LoginActivity" />
-        <activity
-            android:name="id.onschool.LokakaryaActivity" />
-        <activity
-            android:name="id.onschool.SignupActivity" />
-        <activity
-            android:name="id.onschool.ProfileActivity" />
-
-
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LandingActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".LokakaryaActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".ProfileActivity" />
     </application>
 
 </manifest>
